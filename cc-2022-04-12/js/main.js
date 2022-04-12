@@ -11,6 +11,6 @@
 
 // create a function that takes in a string of letters
 function makeUpperCase(str) {
-// use the toUpperCase() method on the string
-    str.toUpperCase();
+// use the toUpperCase() method on the string to return all uppercase letters
+    return str.toUpperCase();
 }
