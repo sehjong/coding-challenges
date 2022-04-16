@@ -10,5 +10,5 @@
 
 // create a function that takes in a string
 function removeExclamationMarks(str) {
-    str.split('!').join('');
+    return str.split('!').join('');
 }
