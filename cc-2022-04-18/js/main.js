@@ -18,5 +18,5 @@
 
 // create a function that takes in two arguments
 function areaOrPerimeter(length, width) {
-    
+    length === width ? width * width : 2 * (width + length);
 }
