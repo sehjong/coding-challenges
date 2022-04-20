@@ -21,5 +21,9 @@
 
 // create a function that takes in a word or number
 function checkPalindrome(input) {
-
+    if('' + line === ('' + line).split(' ').reverse().join('')) {
+        return true;
+    }else{
+        return false;
+    }
 }
