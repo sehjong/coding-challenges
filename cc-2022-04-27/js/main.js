@@ -11,5 +11,5 @@
 
 // create a function that takes in a number
 function quarterOf(month) {
-    Math.ceil(month/3);
+    return Math.ceil(month/3);
 }
