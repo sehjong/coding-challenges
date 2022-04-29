@@ -16,5 +16,16 @@
 
 // create a function that takes in an array of numbers
 function countPositivesSumNegatives(input) {
-
+    let count = 0;
+    let sum = 0;
+    if(input === null || input.length === 0) {
+        return [];
+    }
+    for(let i = 0; i < input.length; i++) {
+        if(input[i] > 0) {
+            count += 1;
+        }else if(input[i] <= 0) {
+            sum += input[i];
+        }
+    }
 }
