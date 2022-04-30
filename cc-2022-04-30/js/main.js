@@ -28,4 +28,5 @@ function countPositivesSumNegatives(input) {
             sum += input[i];
         }
     }
+    return [count, sum];
 }
