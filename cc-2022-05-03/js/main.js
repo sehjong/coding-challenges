@@ -19,5 +19,5 @@
 
 // create a function that takes in an array of numbers
 function sumOfDiff(intArr) {
-
+    intArr.length > 1 ? Math.max(...intArr) - Math.min(...intArr) : 0;
 }
