@@ -17,5 +17,9 @@
 
 // create a function that takes two integers (a, b, where a < b)
 function between(a, b) {
-    
+    let arr = [];
+    for(let i = a; i <= b; i++) {
+        arr.push[i];
+    }
+    return arr;
 }
