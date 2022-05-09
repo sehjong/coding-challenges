@@ -30,5 +30,5 @@
 
 // create a function that takes in h hours, m minutes, s seconds
 function past(h, m, s) {
-    ((h * 3600000) + (m * 60000) + (s * 1000));
+    return ((h * 3600000) + (m * 60000) + (s * 1000));
 }
