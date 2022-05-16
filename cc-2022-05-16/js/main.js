@@ -15,5 +15,10 @@
 
 // create a function that takes in two parameters: an array and a random number
 function checkArr(arr, num) {
-    
+// check whether the array contains the number, return TRUE if the array contains the number, return FALSE if the array does not contain the number
+    if(arr === num) {
+        return true;
+    }else{
+        return false;
+    }
 }
