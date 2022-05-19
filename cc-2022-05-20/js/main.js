@@ -12,5 +12,7 @@
 // P:
 
 // create a function that takes in an array of numbers
-// loop through the array
-// return the sum
+function sum(arr) {
+// loop through the array and return the sum
+    return arr.reduce((acc,c) => acc + c, 0);
+}
