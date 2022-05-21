@@ -14,5 +14,5 @@
 // create a function that takes in an array of numbers
 function sum(arr) {
 // loop through the array and return the sum
-    return arr.reduce((acc,c) => acc + c, 0);
+    return arr.reduce((acc,c) => acc + (c > 0 ? c : 0), 0);
 }
