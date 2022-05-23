@@ -10,5 +10,5 @@
 // create a function that takes in an array
 function strArr(arr) {
 // return the string without spaces
-    return arr.trim()
+    return arr.split(' ').join('')
 }
