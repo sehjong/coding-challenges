@@ -15,5 +15,5 @@
 // create a function that takes in a string of words
 function strToArr(str) {
 // return an array of words
-    return str.split('');
+    return str.split(' ');
 }
