@@ -11,6 +11,11 @@
 
 // create a function that takes in an array of numbers
 function sumArrSquared(arr) {
-// return the sum of the squared numbers   
-    return 
+    let sum = 0;
+// loop through the array
+    for(i = 0; i < arr.length; i++) {
+
+    }
+// return the sum of the squared numbers
+    return
 }
