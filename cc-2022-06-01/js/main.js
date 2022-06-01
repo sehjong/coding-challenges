@@ -14,8 +14,8 @@ function sumArrSquared(arr) {
     let sum = 0;
 // loop through the array
     for(i = 0; i < arr.length; i++) {
-
+        sum += arr[i] **2;
     }
 // return the sum of the squared numbers
-    return
+    return sum;
 }
