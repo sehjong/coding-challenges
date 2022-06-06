@@ -18,5 +18,5 @@
 // create a function that takes in a number
 function oppositeNum(num) {
 // return its opposite
-    return
+    return num;
 }
