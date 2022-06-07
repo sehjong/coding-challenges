@@ -17,6 +17,7 @@
 
 // create a function that takes in a number
 function oppositeNum(num) {
+    let oppNum = 0 - num;
 // return its opposite
-    return num;
+    return oppNum;
 }
