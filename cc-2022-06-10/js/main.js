@@ -16,5 +16,5 @@
 
 // create a function that takes in a number
 function numToStr(num) {
-    
+    num.toString();
 }
