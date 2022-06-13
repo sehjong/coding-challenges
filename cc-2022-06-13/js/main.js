@@ -13,5 +13,5 @@
 
 // create a function that reverses the string passed into it
 function reverseStr(str) {
-    str.split('').reverse().join('');
+    return str.split('').reverse().join('');
 }
