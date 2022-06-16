@@ -14,5 +14,5 @@
 
 // create a function that takes in an integer n and a string s as parameters
 function repeatStrNum(num, str) {
-    str.repeat(num);
+    return str.repeat(num);
 }
