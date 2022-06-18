@@ -21,5 +21,7 @@
 
 // create a function that takes in a number
 function negativeNum(num) {
-
+    if(num > 0) {
+        return num * -1;
+    }
 }
