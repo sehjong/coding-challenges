@@ -16,5 +16,5 @@
 
 // create a function that takes in an array
 function findSmallestInt(intArr) {
-    return 0;
+    return Math.min(...intArr);
 }
