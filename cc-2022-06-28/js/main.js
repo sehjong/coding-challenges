@@ -20,5 +20,5 @@
 
 // create a function that takes in a string
 function strToNum(str) {
-    parseInt(str);
+    return parseInt(str);
 }
