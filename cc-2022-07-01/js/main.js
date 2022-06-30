@@ -34,5 +34,5 @@
 
 // create a function that takes in an array of numbers
 function intArrSum(intArr) {
-
+    intArr.reduce((acc, c) => acc + c, 0);
 }
