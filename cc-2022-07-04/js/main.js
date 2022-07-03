@@ -22,5 +22,5 @@
 
 // create a function century that takes in a number year
 function century(year) {
-
+    Math.ceil(year/100);
 }
