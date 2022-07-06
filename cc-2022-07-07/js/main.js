@@ -22,5 +22,12 @@
 
 // create a program that finds the summation of every number from 1 to num
 var summation = function (num) {
-    
+    let total = 0;
+    const sum = num => {
+        for(let i = 0; i <= num; i++) {
+            total += i;
+        }
+    };
+    sum(num);
+    (total);
 }
