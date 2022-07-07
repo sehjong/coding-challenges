@@ -29,5 +29,5 @@ var summation = function (num) {
         }
     };
     sum(num);
-    (total);
+    return (total);
 }
