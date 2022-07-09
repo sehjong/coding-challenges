@@ -19,5 +19,7 @@
 
 // create a function that takes in a string
 function abbrevName(name) {
-    
+    let upper = name.toUpperCase();
+    let justName = upper.split('');
+    `${justName[0][0]}.${justName[1][0]}`;
 }
