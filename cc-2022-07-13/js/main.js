@@ -11,5 +11,5 @@
 
 // create a function that takes in an array of numbers
 function multiplyArr(intArr) {
-    intArr.reduce((acc, c) => {return acc * c});
+    return intArr.reduce((acc, c) => {return acc * c});
 }
