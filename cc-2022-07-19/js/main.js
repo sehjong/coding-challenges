@@ -16,5 +16,8 @@
 
 // create a function that takes in an array of numbers
 function inverse(intArr) {
-    
+    const newArr = [];
+    for(let i = 0; i < intArr.length; i++) {
+        newArr.push(-intArr[i]);
+    }
 }
