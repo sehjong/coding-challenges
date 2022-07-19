@@ -20,4 +20,5 @@ function inverse(intArr) {
     for(let i = 0; i < intArr.length; i++) {
         newArr.push(-intArr[i]);
     }
+    return newArr;
 }
