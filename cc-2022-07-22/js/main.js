@@ -16,6 +16,6 @@
 // create a function that takes in an array of numbers
 function sortArr(intArr) {
     return intArr === null ? [] : intArr.sort(function(a, b) {
-        a - b;
+        return a - b;
     })
 }
