@@ -19,5 +19,8 @@
 
 // create a function that takes in an array of strings
 function arrStr(strArr) {
-
+    const sortArr = (a, b) => {
+        return a.length - b.length;
+    }
+    strArr.sort(sortArr);
 }
