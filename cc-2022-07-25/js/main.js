@@ -22,5 +22,5 @@ function arrStr(strArr) {
     const sortArr = (a, b) => {
         return a.length - b.length;
     }
-    strArr.sort(sortArr);
+    return strArr.sort(sortArr);
 }
