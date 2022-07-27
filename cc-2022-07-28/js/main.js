@@ -19,5 +19,7 @@
 
 // create a function that takes in a list of strings
 var number = function(array) {
-    
+    return array.map(function (line, index) {
+        (index + 1) + ": " + line;
+    });
 }
