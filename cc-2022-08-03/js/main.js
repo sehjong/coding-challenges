@@ -13,5 +13,5 @@
 
 // create a function that takes in an array of numbers
 function getEvenNumbers(intArr) {
-    intArr.filter(a => a % 2 == 0);
+    return intArr.filter(a => a % 2 == 0);
 }
