@@ -14,5 +14,5 @@
 
 // create a function that takes in a string of words
 function reverseWords(str) {
-    
+    return str.split('').reverse().join('').split('').reverse().join('');
 }
