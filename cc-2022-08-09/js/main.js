@@ -18,5 +18,5 @@
 
 // create a function that takes in any natural or whole number
 function descendingOrder(num) {
-    return parseInt(String(num).split(' ').sort().reverse().join(''));
+    return parseInt(String(num).split('').sort().reverse().join(''));
 }
