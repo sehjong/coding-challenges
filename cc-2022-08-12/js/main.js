@@ -17,5 +17,5 @@
 
 // create a function that takes in a string of letters
 function isIsogram(str) {
-    
+    return str.toLowerCase() === [...new Set(str.toLowerCase().split(' '))].join('');
 }
