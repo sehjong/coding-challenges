@@ -16,5 +16,11 @@
 
 // create a function that takes in whole numbers and strings
 function filter_list(listArr) {
-
+    let newArr = [];
+    for(let i = 0; i < listArr.length; i++) {
+        if(typeOf listArr[i] !== 'string') {
+            newArr.push(listArr[i]);
+        }
+    }
+    return newArr;
 }
