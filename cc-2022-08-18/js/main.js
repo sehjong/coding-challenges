@@ -17,5 +17,5 @@
 // create a function that takes in an array of numbers
 function largestPairSum(numbers) {
     const num = numbers.sort((a, b) => b - a);
-    num[0] + num[1];
+    return num[0] + num[1];
 }
