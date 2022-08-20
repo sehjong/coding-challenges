@@ -14,5 +14,8 @@
 
 // create a function that takes in an array of numbers
 function sumTwoSmallestNumbers(numbers) {
-
+    let first = Math.min(...numbers);
+    numbers.splice(numbers.indexof(first), 1);
+    let second = Math.min(...numbers);
+    return first + second;
 }
