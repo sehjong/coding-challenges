@@ -18,4 +18,5 @@
 // create a function that takes in an array of numbers
 function evenNumbers(arr, num) {
     const evenNums = arr.filter(item => item % 2 === 0).slice(-num);
+    return evenNums;
 }
