@@ -21,5 +21,8 @@
 
 // create a function that takes in a string
 function XO(str) {
-
+    const Str = str.split(' ');
+    const A = a => {return a === 'x' || a === 'X'};
+    const B = b => {return b === 'o' || b === 'O'};
+    return (Str.filter(A).length === Str.filter(B).length ? true : false);
 }
