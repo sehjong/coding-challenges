@@ -14,5 +14,5 @@
 // create a function that takes in words as an array of strings
 function wordsToSentence(words) {
 // use the join('') method to concatenate all the elements in the array into one string, return the new string
-    return words.join('');
+    return words.join(' ');
 }
