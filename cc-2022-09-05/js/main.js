@@ -21,5 +21,5 @@
 // extend Array.prototype with a method to create a function that takes in an array of numbers and strings
 Array.prototype.numberOfOccurrences = function(num) {
 // use the filter() method and length property on this array object 
-    this.filter(x => x === num).length;
+    return this.filter(x => x === num).length;
 }
