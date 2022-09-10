@@ -25,5 +25,5 @@
 
 // create a function that takes in an array of numbers
 function solve(arr) {
-    
+    [...new Set(arr.reverse())].reverse();
 }
