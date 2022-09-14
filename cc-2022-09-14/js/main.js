@@ -14,5 +14,5 @@
 // create a function that takes in a number
 function squareDigits(num) {
     const square = n => n**2;
-    Number(('' + num).split('').map(Number).map(square).join(''));
+    return Number(('' + num).split('').map(Number).map(square).join(''));
 }
