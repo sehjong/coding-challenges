@@ -13,5 +13,5 @@
 
 // create a function that takes in a string
 function getCount(str) {
-    
+    return str.split(' ').filter(c => 'aeiouAEIOU'.includes(c)).length;
 }
