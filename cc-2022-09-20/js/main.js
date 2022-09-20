@@ -22,6 +22,6 @@ String.prototype.capitalize = function() {
 
 // create a function expression that takes in a string
 let greet = function(name) {
-// return the string with 'Hello' and the capitalize() method applied to it with an exclamation point
-    return 'Hello' + name.capitalize() + '!';
+// return the string with 'Hello ' and the capitalize() method applied to it with an exclamation point
+    return 'Hello ' + name.capitalize() + '!';
 }
