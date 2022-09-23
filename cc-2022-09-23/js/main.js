@@ -14,6 +14,6 @@
 // P:
 
 // create a function that takes in a string and an integer n as parameters
-function filterLongWord(sentence, n) {
-    
+function filterLongWords(sentence, n) {
+    return sentence.split('').filter(x => x.length > n);
 }
