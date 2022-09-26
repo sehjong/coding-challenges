@@ -21,4 +21,5 @@ function doubleEveryOther(intArr) {
     for(let i = 1; i < intArr.length; i += 2) {
         intArr[i] *= 2;
     }
+    return intArr;
 }
