@@ -15,5 +15,6 @@
 
 // create a function that takes in an array of numbers and a string 'value' or 'index'
 function min(intArr, toReturn) {
-    
+    let val = Math.min.apply(null, intArr);
+    toReturn == 'value' ? val : intArr.indexOf(val);
 }
