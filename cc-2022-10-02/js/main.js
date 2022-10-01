@@ -29,6 +29,6 @@
 // P:
 
 // create a function that takes in an array of numbers
-function oddOrEven() {
-    
+function oddOrEven(intArr) {
+    intArr.reduce((a, b) => a + b, 0) % 2 ? 'odd' : 'even';
 }
