@@ -18,5 +18,5 @@
 
 // create a function that takes in a number
 function sumDigits(num) {
-
+    return Math.abs(num).toString().split('').reduce((a, b) => a + b, 0);
 }
