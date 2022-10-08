@@ -9,7 +9,7 @@
 
 // create a function that takes in a string
 function alternateCase(str) {
-    return str.split(' ').map(function(e) {
+    return str.split('').map(function(e) {
         return e === e.toUpperCase() ? e.toLowerCase() : e.toUpperCase();
-    }).join(' ');
+    }).join('');
 }
