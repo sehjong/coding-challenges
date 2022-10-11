@@ -32,5 +32,5 @@
 
 // create a function that takes in two numbers as input, num and nth
 function findDigit(num, nth) {
-    return nth > 0 ? Math.floor(Math.abs(num) / Math.pow(10, nth-1) % 10 : -1;
+    return nth > 0 ? Math.floor(Math.abs(num) / Math.pow(10, nth-1)) % 10 : -1;
 }
