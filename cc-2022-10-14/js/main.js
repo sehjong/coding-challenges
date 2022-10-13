@@ -14,5 +14,5 @@
 
 // create a function that takes in an object of key value pairs
 function keysAndValues(data) {
-    
+    [Object.keys(data), Object.values(data)];
 }
