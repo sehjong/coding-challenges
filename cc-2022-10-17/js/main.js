@@ -21,5 +21,10 @@
 
 // create a function that takes in a number
 function rowSumOddNumbers(num) {
-    
+    let oddNum = [];
+    for(let i = (num**2) -num + 1; i <= ((num**2) +num - 1); i += 2) {
+        oddNum.push[i];
+    };
+    const reducer = (a, b) => {return a + b};
+    return oddNum.reduce(reducer);
 }
