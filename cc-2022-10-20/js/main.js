@@ -15,5 +15,5 @@
 
 // create a function that takes in start and end times
 function elapsedSeconds(startDate, endDate) {
-
+    (endDate - startDate) / 1000;
 }
