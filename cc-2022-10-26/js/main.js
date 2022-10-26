@@ -11,5 +11,5 @@
 
 // create a function that takes in a string
 function spacify(str) {
-
+    return str.split('').join('');
 }
