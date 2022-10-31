@@ -17,5 +17,9 @@
 
 // create a function that takes in numbers
 function sum() {
-
+    let total = 0;
+    for(let i in arguments) {
+        total += arguments[i];
+    }
+    total;
 }
