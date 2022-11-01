@@ -21,5 +21,5 @@ function sum() {
     for(let i in arguments) {
         total += arguments[i];
     }
-    total;
+    return total;
 }
