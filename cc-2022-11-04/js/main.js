@@ -12,5 +12,5 @@
 
 // create a function that takes in an string of word(s)
 function findShort(str) {
-    return Math.min(...str.split('').map(str => str.length));
+    return Math.min(...str.split(' ').map(str => str.length));
 }
