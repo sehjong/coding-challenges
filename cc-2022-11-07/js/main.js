@@ -20,7 +20,7 @@
 function stray(nums) {
     for(let i in nums) {
         if(nums.indexOf(nums[i]) === nums.lastIndexOf(nums[i])) {
-            return num[i]
+            return nums[i]
         }
     }
 }
