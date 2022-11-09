@@ -13,5 +13,11 @@
 
 // create a function that takes in an array of numbers
 function findLongest(intArr) {
-
+    let num = '0';
+    for(let i = 0; i < intArr.length; i++) {
+        let string = intArr[i].toString();
+        if(string.length > num.length) {
+            num = string;
+        }
+    }
 }
