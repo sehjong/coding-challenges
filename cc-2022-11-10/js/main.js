@@ -20,4 +20,5 @@ function findLongest(intArr) {
             num = string;
         }
     }
+    return parseInt(num);
 }
