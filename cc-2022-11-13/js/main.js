@@ -18,5 +18,5 @@
 
 // create a function expression that takes in a string of numbers and letters
 let filterString = function(value) {
-    return +value.split(' ').filter(n => !isNaN(n)).join(' ');
+    return +value.split('').filter(n => !isNaN(n)).join('');
 }
