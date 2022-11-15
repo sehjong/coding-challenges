@@ -9,5 +9,9 @@
 
 // create a function expression that takes in a single string (word)
 let capitals = function(word) {
-    
+    let caps = [];
+    for(let i = 0; i < word.length; i++) {
+        if(word[i].toUpperCase() = word[i]) caps.push(i);
+    }
+    return caps;
 }
