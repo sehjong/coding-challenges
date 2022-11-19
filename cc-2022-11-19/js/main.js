@@ -11,5 +11,5 @@
 
 // create a function that takes in a number
 function digits(num) {
-    num.toString().length;
+    return num.toString().length;
 }
