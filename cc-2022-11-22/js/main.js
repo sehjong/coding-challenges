@@ -24,7 +24,7 @@
 
 // create a function that takes in an array of numbers
 function inAscOrder(intArr) {
-    for(let i = 0; i < intArr.length; i++) {
+    for(let i = 0; i < intArr.length - 1; i++) {
         if(intArr[i] > intArr[i + 1]) {
             return false;
         }
