@@ -30,7 +30,7 @@
 // create a function expression that takes in two integers
 let findDigit = function(num, nth) {
     if(nth <= 0) return -1;
-    let arr = Math.abs(num).toString().split(' ');
+    let arr = Math.abs(num).toString().split('');
     if(nth > arr.length) return 0;
     return Number(arr[arr.length - nth]);
 }
