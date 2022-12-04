@@ -15,5 +15,5 @@
 
 // create a function that takes in strings
 function solution(str, ending) {
-    str.endsWith(ending);
+    return str.endsWith(ending);
 }
