@@ -29,5 +29,5 @@
 
 // create a function that takes in a word as a string
 function getMiddle(strWord) {
-    
+    strWord.substr(Math.ceil(strWord.length / 2 - 1), strWord.length % 2 === 0 ? 2 : 1);
 }
