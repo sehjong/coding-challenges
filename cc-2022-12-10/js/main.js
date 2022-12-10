@@ -15,7 +15,7 @@
 
 // create a function that takes in a string of letters
 function switcheroo(x) {
-    return x.split(' ').map(function(e) {
+    return x.split('').map(function(e) {
         if(e == 'b') return 'a';
         if(e == 'a') return 'b';
         if(e == 'c') return 'c';
