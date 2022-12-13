@@ -18,5 +18,5 @@
 
 // create a function that takes in strings of numbers
 function toNumberArray(strArr) {
-    strArr.map(Number);
+    return strArr.map(Number);
 }
