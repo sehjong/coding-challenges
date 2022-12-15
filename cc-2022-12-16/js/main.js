@@ -18,5 +18,7 @@
 
 // create a function that takes in an array of unique integers between 0 and 9 (inclusive, in no particular order)
 function getMissingElement(intArr) {
-
+    for(i = 0; i < 10; i++) {
+        if(intArr.indexOf(i) == -1) return i;
+    }
 }
