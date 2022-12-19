@@ -16,5 +16,5 @@
 
 // create a function that takes in an integer
 function getDecimal(num) {
-    Math.abs(num % 1);
+    return Math.abs(num % 1);
 }
