@@ -28,5 +28,7 @@
 
 // create a function that takes in strings of keyed value pairs as objects in an array
 function capital(capitals) {
-    
+    return capitals.map(function(e) {
+        return 'The capital of' + (e.state || e.country) + 'is' + e.capital;
+    })
 }
