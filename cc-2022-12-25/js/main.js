@@ -16,5 +16,17 @@
 
 // create a function that takes in an array of integers
 function mostFrequentItemCount(collection) {
-    
+    let count = 0,
+    frequentCount = 0;
+    for(let i = 0; i < collection.length; i++) {
+        for(let j = 0; j < collection.length; j++) {
+            if(collection[i] == collection[j]) {
+                count++;
+            }
+            if(frequentCount < count) {
+                frequentCount = count;
+            }
+        }
+        count = 0;
+    }
 }
