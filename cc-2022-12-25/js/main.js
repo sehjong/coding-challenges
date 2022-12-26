@@ -29,4 +29,5 @@ function mostFrequentItemCount(collection) {
         }
         count = 0;
     }
+    return frequentCount;
 }
