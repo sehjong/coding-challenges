@@ -24,5 +24,5 @@
 
 // create a function that takes in an array of numbers
 function gimme(intArr) {
-
+    return intArr.indexOf(intArr.concat().sort(function(a, b) { return a - b }));
 }
