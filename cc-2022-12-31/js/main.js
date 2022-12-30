@@ -27,5 +27,8 @@
 
 // create a function that takes in a string of letters and an array of numbers
 function lastSurvivor(letters, coords) {
-    
+    letters = letters.split('');
+    for(let i = 0; i < coords.length; i++) {
+        letters.splice(coords[i], 1);
+    }
 }
