@@ -19,5 +19,9 @@
 
 // create a function that takes in a given year in whole numbers
 function isLeapYear(year) {
-    (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
+    return (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
 }
+
+console.log(isLeapYear(2004), true); // returns true true
+console.log(isLeapYear(1234), false); // returns false false
+console.log(isLeapYear(2010), false); // returns false false
