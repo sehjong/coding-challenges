@@ -17,5 +17,13 @@
 
 // create a function that takes in a string of numbers
 function evenOrOdd(strNums) {
-
+    let odd = strNums.split(' ').filter(e => e % 2 != 0).reduce((a, b) => (+a) + (+b));
+    let even = strNums.split(' ').filter(e => e % 2 == 0).reduce((a, b) => (+a) + (+b));
+    if(even > odd) {
+        return 'Even is greater than Odd';
+    } else if(even < odd) {
+        return 'Odd is greater than Even';
+    } else {
+        return 'Even and Odd are the same';
+    }
 }
