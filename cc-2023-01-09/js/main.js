@@ -26,5 +26,8 @@
 
 // create a function that takes in an array of integers
 function elevatorDistance(intArr) {
-
+    let distance = 0;
+    for(let i = 0; i < intArr.length - 1; i++) {
+        distance += Math.abs(intArr[i] - intArr[i + 1]);
+    }
 }
