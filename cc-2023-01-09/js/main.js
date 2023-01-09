@@ -30,4 +30,10 @@ function elevatorDistance(intArr) {
     for(let i = 0; i < intArr.length - 1; i++) {
         distance += Math.abs(intArr[i] - intArr[i + 1]);
     }
+    return distance;
 }
+
+console.log(elevatorDistance([5,2,8]), 9); // returns 9 9
+console.log(elevatorDistance([1,2,3]), 2); // returns 2 2
+console.log(elevatorDistance([7,1,7,1]), 18); // returns 18 18
+console.log(elevatorDistance([3,3]), 0); // returns 0 0
