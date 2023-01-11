@@ -20,5 +20,7 @@
 
 // create a function that takes in an integer
 function add(n) {
-
+    return function (m) {
+        n + m;
+    }
 }
