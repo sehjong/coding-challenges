@@ -21,6 +21,12 @@
 // create a function that takes in an integer
 function add(n) {
     return function (m) {
-        n + m;
+        return n + m;
     }
 }
+
+let addOne = add(1);
+console.log(addOne(3), 4); // returns 4 4
+
+let addThree = add(3);
+console.log(addThree(3), 6); // returns 6 6
