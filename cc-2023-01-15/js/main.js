@@ -16,5 +16,7 @@
 //create a function that takes in a natural number
 function halvingSum(num) {
     if(num === 1) return num;
-    num + halvingSum(Math.floor(num / 2));
+    return num + halvingSum(Math.floor(num / 2));
 }
+
+console.log(halvingSum(25), 47); // returns 47 47
