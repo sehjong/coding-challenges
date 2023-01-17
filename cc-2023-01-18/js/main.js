@@ -19,5 +19,5 @@
 
 // create a function that takes in a whole number
 function digitize(num) {
-    
+    String(num).split(' ').map(Number);
 }
