@@ -19,5 +19,9 @@
 
 // create a function that takes in a whole number
 function digitize(num) {
-    String(num).split(' ').map(Number);
+    return String(num).split('').map(Number);
 }
+
+console.log(digitize(123), [1, 2, 3]); // returns [1, 2, 3] [1, 2, 3]
+console.log(digitize(1), [1]); // returns [1] [1]
+console.log(digitize(8675309), [8, 6, 7, 5, 3, 0, 9]); // returns [8, 6, 7, 5, 3, 0, 9] [8, 6, 7, 5, 3, 0, 9]
