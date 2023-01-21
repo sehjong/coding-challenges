@@ -18,5 +18,5 @@
 function unusedDigits(...args) {
     const nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     let numStr = args.join('');
-    nums.filter(el => !numStr.includes(el)).join('');
+    return nums.filter(el => !numStr.includes(el)).join('');
 }
