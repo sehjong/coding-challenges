@@ -18,5 +18,9 @@
 
 // create a function that takes in an array of whole numbers
 function sumEvenNums(arrNums) {
-    
+    arrNums.filter(function(el) {
+        return el % 2 == 0;
+    }).reduce(function(a, b) {
+        return a + b;
+    })
 }
