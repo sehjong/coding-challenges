@@ -11,6 +11,8 @@
 // P:
 
 // create a function expression that takes in a string
-let say = function() {
-    
+let say = function(str1) {
+    return function(str2) {
+        `${str1} ${str2}`;
+    }
 }
