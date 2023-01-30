@@ -21,8 +21,8 @@
 // create a function expression that takes in two numbers
 let noConditionalOperator = function(a, b) {
     switch (Math.sign(a - b)) {
-        case 1: `${a} is greater than ${b}`;
-        case -1: `${a} is smaller than ${b}`;
-        case 0: `${a} is equal to ${b}`;
+        case 1: return `${a} is greater than ${b}`;
+        case -1: return `${a} is smaller than ${b}`;
+        case 0: return `${a} is equal to ${b}`;
     }
 }
