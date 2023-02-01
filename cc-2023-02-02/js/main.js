@@ -20,9 +20,9 @@
 // create a contructor function using ECMAScript 2015 (ES6+) syntax that makes an object with one property and one method
 class Person {
     constructor(name) {
-        
+        this.name = name;
     }
     greet(name) {
-        
+        `Hello ${name}, my name is ${this.name}`;
     }
 }
