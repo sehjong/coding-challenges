@@ -23,6 +23,6 @@ class Person {
         this.name = name;
     }
     greet(name) {
-        `Hello ${name}, my name is ${this.name}`;
+        return `Hello ${name}, my name is ${this.name}`;
     }
 }
