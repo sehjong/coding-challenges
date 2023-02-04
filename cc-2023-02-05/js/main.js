@@ -27,5 +27,5 @@
 
 // create a function that takes in an integer
 function roundToNextFive(num) {
-
+    Math.ceil(num / 5) * 5;
 }
