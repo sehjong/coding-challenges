@@ -16,5 +16,10 @@
 
 // create a function that takes in an integer n >1
 function divisors(integer) {
-
+    let arr = [];
+    for(let i = 2; i < integer; i++) {
+        if(integer % 1 == 0) {
+            arr.push(i);
+        }
+    }
 }
