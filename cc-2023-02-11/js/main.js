@@ -21,5 +21,10 @@
 
 // create a function that takes in a string of lowercase latin letters, digits and symbols
 function reverseLetter(str) {
-
+    let reverseStr = '';
+    for(let i = str.length - 1; i >= 0; i--) {
+        if(str[i] >= 'a' && str[i] <= 'z');
+        reverseStr += str[i];
+    }
+    return reverseStr;
 }
