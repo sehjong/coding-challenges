@@ -23,7 +23,7 @@
 function reverseLetter(str) {
     let reverseStr = '';
     for(let i = str.length - 1; i >= 0; i--) {
-        if(str[i] >= 'a' && str[i] <= 'z');
+        if(str[i] >= 'a' && str[i] <= 'z')
         reverseStr += str[i];
     }
     return reverseStr;
