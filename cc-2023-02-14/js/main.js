@@ -27,5 +27,7 @@
 
 // create a function expression that takes in two integers, a and b
 const getSum = (a, b) => {
-
+    let min = Math.min(a, b),
+        max = Math.max(a, b);
+        (max - min + 1) * (min + max) / 2;
 }
