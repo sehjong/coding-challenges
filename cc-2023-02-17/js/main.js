@@ -33,5 +33,5 @@ function maskify(cc) {
         cc [i] = '#';
     }
     cc = cc.join('');
-    cc;
+    return cc;
 }
