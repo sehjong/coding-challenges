@@ -20,5 +20,5 @@
 
 // create a function that takes in an array of strings
 function friend(friends) {
-
+    friends.filter(n => n.length === 4);
 }
