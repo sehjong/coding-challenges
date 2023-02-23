@@ -19,5 +19,5 @@
 
 // create a function that takes in an array of integers
 function maxDiff(list) {
-    list.length ? Math.max(...list) - Math.min(...list) : 0;
+    return list.length ? Math.max(...list) - Math.min(...list) : 0;
 }
