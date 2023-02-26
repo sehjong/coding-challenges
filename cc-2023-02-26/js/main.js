@@ -30,5 +30,5 @@ function vowelIndices(word) {
             result.push(i + 1);
         }
     }
-    result;
+    return result;
 }
