@@ -19,5 +19,5 @@
 
 // create a function that takes in a string
 function vowelOne(str) {
-    return str.split(' ').map(x => ('aeiouAEIOU'.includes(x)) ? 1 : 0).join('');
+    return str.split('').map(x => ('aeiouAEIOU'.includes(x)) ? 1 : 0).join('');
 }
