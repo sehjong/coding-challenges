@@ -23,5 +23,5 @@
 
 // create a function that takes in an array of numbers
 function uniqueSum(intArr) {
-
+    [...new Set(intArr)].reduce((a, b) => a + b, null);
 }
