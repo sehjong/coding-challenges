@@ -17,5 +17,8 @@
 
 // create a function expression that takes in an array of integers and another integer
 const intDiff = (intArr, int) => {
-
+    let count = 0;
+    for(let i = 1; i < intArr.length; i++)
+    for(let j = 0; j < i; j++)
+    if(Math.abs(intArr[i] - intArr[j]) === int) count++;
 }
