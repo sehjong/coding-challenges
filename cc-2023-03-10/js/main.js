@@ -21,4 +21,5 @@ const intDiff = (intArr, int) => {
     for(let i = 1; i < intArr.length; i++)
     for(let j = 0; j < i; j++)
     if(Math.abs(intArr[i] - intArr[j]) === int) count++;
+    return count;
 }
