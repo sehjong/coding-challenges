@@ -14,7 +14,7 @@
 // create a function that takes in an array of natural numbers and another natural number as a limit value
 function compareNums(arrNums, limitNum) {
     for(let i of arrNums) {
-        if(i >= limitNum)
+        if(i > limitNum)
         return false;
     }
     return true;
