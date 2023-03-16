@@ -18,7 +18,7 @@
 
 // create a function that takes in a natural number
 function sumCubes(num) {
-    if(num === 1) {
+    if(num == 1) {
         return num**3;
     }else{
         return num**3 + sumCubes(num - 1);
