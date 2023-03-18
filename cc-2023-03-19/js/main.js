@@ -16,5 +16,7 @@
 // create a function that takes in two parameters as arguments,
 // the number of elements to output and an array of numbers to output from
 function largest(n, arrNums) {
-
+    arrNums.sort(function(a, b) {
+        return a - b;
+    }).slice(arrNums.length - n);
 }
