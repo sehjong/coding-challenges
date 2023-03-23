@@ -32,4 +32,5 @@ function caffeineBuzz(num) {
     if(num % 12 === 0) return "CoffeeScript";
     if(num % 6 === 0) return "JavaScript";
     if(num % 3 === 0) return "Java";
+    return "mocha_missing!";
 }
