@@ -22,7 +22,7 @@ function last(list) {
     }
     if(Array.isArray(list)) {
         return list.pop();
-    }else if(typeof list === 'string') {
+    }else if(typeof list == 'string') {
         return list.charAt(list.length -1);
     }else{
         return list;
