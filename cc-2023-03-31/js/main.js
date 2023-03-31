@@ -18,5 +18,5 @@
 
 // create a function that takes in a string and an array of integers representing indices
 function capitalize(str, intArr) {
-    return [...str].map((x, i) => intArr.includes(i) ? x.toUpperCase() : x).join(' ');
+    return [...str].map((x, i) => intArr.includes(i) ? x.toUpperCase() : x).join('');
 }
