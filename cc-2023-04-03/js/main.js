@@ -19,5 +19,9 @@
 
 // create a function expression that takes in two arrays of numbers
 const findMissing = (arr1, arr2) => {
-
+    arr1 = arr1.sort();
+    arr2 = arr2.sort();
+    for(let i = 0; i < arr1.length; i++) {
+        if(arr1[i] != arr2[i]) arr1[i];
+    }
 }
