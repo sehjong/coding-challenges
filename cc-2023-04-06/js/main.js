@@ -19,4 +19,4 @@
 
 // create a function expression that takes in an array of vowel letters as strings
 const vowels = ['a', 'e', 'i', 'o', 'u'];
-const swap = s => s.split(' ').map(x => vowels.includes(x) ? x.toUpperCase() : x).join('');
+const swap = s => s.split('').map(x => vowels.includes(x) ? x.toUpperCase() : x).join('');
