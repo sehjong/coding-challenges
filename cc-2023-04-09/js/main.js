@@ -20,5 +20,5 @@
 
 // create a function that takes in an array of strings
 function wordValue(strArr) {
-    
+    strArr.map((x, i) => (i + 1) * [...x].reduce((a, c) => a + c.charCodeAt(0) % 32, 0));
 }
