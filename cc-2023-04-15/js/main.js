@@ -18,5 +18,5 @@
 
 // create a function that takes in two strings of letters
 function solve(a, b) {
-    return (a + b).split(' ').filter(c => !a.includes(c) || !b.includes(c)).join('');
+    return (a + b).split('').filter(c => !a.includes(c) || !b.includes(c)).join('');
 }
