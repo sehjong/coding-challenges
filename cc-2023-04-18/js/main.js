@@ -22,6 +22,4 @@
 // P:
 
 // create a function expression that takes in a string of words
-const removeDuplicateWords = str => {
-    [...new Set(str.split(' '))].join('');
-}
+const removeDuplicateWords = str => [...new Set(str.split(' '))].join(' ');
