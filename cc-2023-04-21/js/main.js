@@ -14,5 +14,5 @@
 
 // create a function that takes in a mixed array of number and string representations of integers
 function sumNums(nums) {
-    nums.reduce((acc, c) => (typeof c === 'number') ? acc + c : acc - +c, 0);
+    return nums.reduce((acc, c) => (typeof c === 'number') ? acc + c : acc - +c, 0);
 }
