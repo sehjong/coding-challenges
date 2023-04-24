@@ -16,6 +16,6 @@
 // P:
 
 // create a function that takes in an array of strings
-function evenChars(strArr) {
-    return (strArr.length < 2 || strArr.length > 100) ? 'invalid string' : [...strArr].filter((x, i) => i % 2);
+function evenChars(str) {
+    return (str.length < 2 || str.length > 100) ? 'invalid string' : [...str].filter((x, i) => i % 2);
 }
