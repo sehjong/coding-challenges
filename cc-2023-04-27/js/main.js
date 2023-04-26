@@ -36,5 +36,6 @@
 
 // create a function that takes in natural numbers
 function minValue(values) {
-    
+    let arr = Array.from(new Set(values));
+    return parseInt(arr.sort().join(' '));
 }
