@@ -27,5 +27,5 @@
 
 // create a function that takes in numbers in a matrix 2D array
 function sumOfMinimums(arr) {
-    
+    arr.reduce((acc, c) => acc + Math.min(...c), 0);
 }
