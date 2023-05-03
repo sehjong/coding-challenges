@@ -39,5 +39,5 @@
 
 // create a function that takes in an array of numbers
 function minSum(arr) {
-    arr.sort((a, b) => a - b).slice(0, arr.length / 2).reduce((acc, c, i) => acc += c * arr[arr.length - i - 1], 0);
+    return arr.sort((a, b) => a - b).slice(0, arr.length / 2).reduce((acc, c, i) => acc += c * arr[arr.length - i - 1], 0);
 }
