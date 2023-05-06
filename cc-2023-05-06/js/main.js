@@ -20,5 +20,5 @@
 
 // create a function that takes in an array of numbers
 function minMax(arrNums) {
-    Math.max(...arrNums) - Math.min(...arrNums);
+    return Math.max(...arrNums) - Math.min(...arrNums);
 }
