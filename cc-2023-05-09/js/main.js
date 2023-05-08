@@ -19,5 +19,5 @@
 
 // create a function expression that takes in a string of words
 const removeConsecutiveDuplicateWords = str => {
-    
+    str.split(' ').filter((e, i, a) => e != a[i - 1]).join('');
 }
