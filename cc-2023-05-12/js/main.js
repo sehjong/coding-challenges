@@ -22,5 +22,7 @@
 
 // create a function that takes in numbers and strings
 function numbers() {
-    
+    return [].every.call(arguments, function(value){
+        typeof value === 'number';
+    })
 }
