@@ -22,5 +22,5 @@
 
 // create a function that takes in three parameters as arguments, a string of words, an integer, and another integer
 function modifyMultiply(str, num1, num2) {
-    
+    return Array(num2).fill(str.split('')[num1]).join('-');
 }
