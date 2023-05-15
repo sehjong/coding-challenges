@@ -13,7 +13,7 @@
 // P: first parameter is a string of words,
 //    second parameter is an integer to find
 //    the corresponding word in the given string,
-//    the first word would be represented by 0
+//    the first word would be represented by 0,
 //    third paramenter is an integer to multiply
 //    the located string
 // R: the multiplied located string with a hyphen between each word
@@ -22,5 +22,5 @@
 
 // create a function that takes in three parameters as arguments, a string of words, an integer, and another integer
 function modifyMultiply(str, num1, num2) {
-    return Array(num2).fill(str.split('')[num1]).join('-');
+    return Array(num2).fill(str.split(' ')[num1]).join('-');
 }
