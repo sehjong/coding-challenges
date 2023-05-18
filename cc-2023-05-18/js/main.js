@@ -24,7 +24,7 @@
 
 // create a function that takes in numbers and strings
 function solve(arrNumStr) {
-    let theEvens = arrNumStr.filter(num => num % 2 == 0);
-    let theOdds = arrNumStr.filter(num => num % 2 == 1);
-    theEvens.length - theOdds.length;
+    let theEvens = arrNumStr.filter(num => num % 2 === 0);
+    let theOdds = arrNumStr.filter(num => num % 2 === 1);
+    return theEvens.length - theOdds.length;
 }
