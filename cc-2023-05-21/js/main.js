@@ -27,4 +27,5 @@ function duplicates(arr) {
         if(x.includes(i) === false) return x.push(i);
         if(x.includes(i) && y.includes(i) === false) return y.push(i);
     });
+    return y;
 }
