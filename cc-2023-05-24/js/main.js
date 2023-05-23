@@ -16,5 +16,14 @@
 
 // create a function that takes in an array of 5 strings comprising of "a", "b" or "c"
 function checkThreeAndTwo(arr) {
-
+    let item1 = 0, item2 = 0, item3 = 0;
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] === 'a') {
+            item1++;
+        }else if(arr[i] === 'b') {
+            item2++;
+        }else if(arr[i] === 'c') {
+            item3++;
+        }
+    }
 }
