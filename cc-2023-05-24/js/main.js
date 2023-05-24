@@ -26,4 +26,5 @@ function checkThreeAndTwo(arr) {
             item3++;
         }
     }
+    return (item1 == 2 || item2 == 2 || item3 == 2) && (item1 == 3 || item2 == 3 || item3 == 3);
 }
