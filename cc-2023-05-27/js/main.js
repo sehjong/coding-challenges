@@ -20,5 +20,5 @@
 
 // create a function that takes in a string
 function greet(name) {
-    name ? `hello ${name}!` : null;
+    return name ? `hello ${name}!` : null;
 }
