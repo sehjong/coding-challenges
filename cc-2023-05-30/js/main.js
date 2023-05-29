@@ -21,5 +21,11 @@
 
 // create a function that takes in a string of words, numbers, and symbols
 function validateWord(str) {
-
+    let string = str.toLowerCase().split('');
+    let array = [];
+    let count = 0;
+    for(let i = 0; i < string.length; i++) {
+        count = string.filter(e => e == string[i]);
+        array.push(count.length);
+    }
 }
