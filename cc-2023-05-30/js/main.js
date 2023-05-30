@@ -28,4 +28,5 @@ function validateWord(str) {
         count = string.filter(e => e == string[i]);
         array.push(count.length);
     }
+    return array.every(e => e == array[0]);
 }
