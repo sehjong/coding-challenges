@@ -13,5 +13,5 @@
 
 // create a function that takes in a number
 function solution(value) {
-
+    return 'Value is ' + ('0000' + value).slice(5);
 }
