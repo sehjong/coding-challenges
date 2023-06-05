@@ -17,5 +17,5 @@
 
 // create a function that takes in a string
 function vaporCode(str) {
-    return str.toUpperCase().split(' ').join('');
+    return str.toUpperCase().split(' ').join('').split('').join(' ');
 }
