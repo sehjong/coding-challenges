@@ -14,7 +14,7 @@ function sumInt(str) {
     let num = [];
     let nums = '';
     for(let i = 0; i < str.length; i++) {
-        if(!NaN(Number(str[i]))) {
+        if(!isNaN(Number(str[i]))) {
             nums += str[i];
             if(isNaN(Number(str[i + 1]))) {
                 num.push(Number(nums));
