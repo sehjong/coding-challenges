@@ -16,5 +16,5 @@
 
 // create a function that takes in a whole number
 function toStr(num) {
-    num.toLocaleString();
+    return num.toLocaleString();
 }
