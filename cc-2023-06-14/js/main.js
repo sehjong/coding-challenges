@@ -17,5 +17,11 @@
 
 // create a function that takes in an array of numbers
 function maxMin(arrNums) {
-
+    let minMax = [];
+    arrNums.sort((a, b) => a - b);
+    for(let i = 0; let j = arrNums.length - 1; i <= j; i++, j--) {
+        if(i != j) minMax.push(arrNums[j]), minMax.push(arrNums[i]);
+        else minMax.push(arrNums[i]);
+    }
+    return minMax;
 }
