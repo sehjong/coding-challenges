@@ -20,5 +20,15 @@
 
 // create a function that takes in two arrays, an array of strings and an array of natural numbers
 function mergeArrs(a, b) {
-
+    let mergedArray = [];
+    let counter = 0;
+    while(a[counter] || b[counter]) {
+        if(a[counter]) {
+            mergedArray.push(a[counter]);
+        }
+        if(b[counter]) {
+            mergedArray.push(b[counter]);
+        }
+        counter++;
+    }
 }
