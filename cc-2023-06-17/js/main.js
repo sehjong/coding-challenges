@@ -31,4 +31,5 @@ function mergeArrs(a, b) {
         }
         counter++;
     }
+    return mergedArray;
 }
