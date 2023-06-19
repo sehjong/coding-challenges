@@ -22,5 +22,5 @@
 
 // create a function that takes in a number
 function closestMultiple10(num) {
-    
+    Math.round(num / 10) * 10;
 }
