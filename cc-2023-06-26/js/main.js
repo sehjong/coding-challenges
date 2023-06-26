@@ -25,5 +25,5 @@
 
 // create a function that takes in a whole number
 function time(num) {
-    5 * Math.ceil(num / 8);
+    return 5 * Math.ceil(num / 8);
 }
