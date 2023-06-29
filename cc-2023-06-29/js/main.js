@@ -16,7 +16,7 @@
 // create a function expression that returns an array as a (list of tuples) in order of appearance,
 // from a string of letters and numbers
 const orderedCount = str => {
-    Array.from(
+    return Array.from(
         str.split('').reduce((acc, c) =>
             acc.set(c, acc.has(c) ? acc.get(c) + 1 : 1),
                 new Map()
