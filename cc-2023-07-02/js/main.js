@@ -15,5 +15,5 @@
 
 // create a function expression that takes in an array of arrays of numbers and strings
 const flatten = (array) => {
-    [].concat(...array);
+    return [].concat(...array);
 }
