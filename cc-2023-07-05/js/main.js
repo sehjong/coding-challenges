@@ -29,5 +29,13 @@
 
 // create a function expression that takes in an array of whole numbers
 let isSquare = function(arrNums) {
-    
+    if(arrNums.length == 0) {
+        return undefined;
+    }
+    for(let num of arrNums) {
+        if(Math.sqrt(num) % 1 != 0) {
+            return false;
+        }
+    }
+    return true;
 }
