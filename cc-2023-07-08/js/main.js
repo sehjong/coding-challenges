@@ -21,5 +21,5 @@
 
 // create a function that takes in a string of letters, a string of letters and numbers, or numbers
 function tea42(input) {
-
+    input.toString().replaceAll('2', 't');
 }
