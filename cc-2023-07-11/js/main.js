@@ -21,5 +21,10 @@
 
 // create a function that takes in a string
 function absentVowel(str) {
-    
+    let vowels = 'aeiou';
+    for(let i in vowels) {
+        if(str.toLowerCase().indexOf(vowels[i]) === -1) {
+            return Number(i);
+        }
+    }
 }
