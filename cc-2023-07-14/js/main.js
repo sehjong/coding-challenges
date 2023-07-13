@@ -25,5 +25,5 @@
 
 // create a function that takes in an array of numbers
 function incrementer(arrNums) {
-    
+    arrNums.map((e, i) => (e + i + 1) % 10);
 }
