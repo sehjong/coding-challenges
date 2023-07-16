@@ -14,5 +14,16 @@
 
 // create a function expression
 const solve = (str) => {
-
+    let result = [0, 0, 0, 0];
+    for(let i = 0; i < str.length; i += 1) {
+        if(str[i].toLowerCase() > str[i]) {
+            result[0] += 1;
+        }else if(str[i].toUpperCase() < str[i]) {
+            result[1] += 1;
+        }else if(str[i] >= 0 && str[i] <= 9) {
+            result[2] += 1;
+        }else{
+            result[3] += 1;
+        }
+    }
 }
