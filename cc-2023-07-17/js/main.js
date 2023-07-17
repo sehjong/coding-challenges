@@ -26,4 +26,5 @@ const solve = (str) => {
             result[3] += 1;
         }
     }
+    return result;
 }
