@@ -13,5 +13,5 @@
 
 // create a function that takes in an array of integers, and two integers a and b as parameters
 function consecutive(arr, a, b) {
-    
+    return Math.abs(arr.indexOf(a) - arr.indexOf(b)) === 1;
 }
