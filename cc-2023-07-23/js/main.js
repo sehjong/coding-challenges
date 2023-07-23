@@ -14,5 +14,6 @@
 
 // create a function that takes in an array of unique integers
 function consecutive(arr) {
-
+    let lengthOfArr = arr.length;
+    lengthOfArr ? Math.max(...arr) - Math.min(...arr) - lengthOfArr + 1 : 0;
 }
