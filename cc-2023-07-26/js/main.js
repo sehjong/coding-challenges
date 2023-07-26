@@ -14,5 +14,5 @@
 
 // create a function that takes in an array of numbers
 function average(scores) {
-    Math.round(scores.reduce((acc, c) => acc + c, 0) / scores.length);
+    return Math.round(scores.reduce((acc, c) => acc + c, 0) / scores.length);
 }
