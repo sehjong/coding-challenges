@@ -36,4 +36,10 @@ function mispelled(word1, word2) {
             diffCount++;
         }
     }
+
+    if (Math.abs(word1.length - word2.length) === 1) {
+        return word1.includes(word2) || word2.includes(word1);
+    }
+
+    return diffCount <= 1;
 }
