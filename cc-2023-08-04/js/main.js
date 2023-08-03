@@ -13,5 +13,5 @@
 
 // create a function that takes in two numbers as parameters, annual_price and individual_price, as arguments
 function optimalVisits(annual_price, individual_price) {
-
+    Math.ceil(annual_price / individual_price);
 }
