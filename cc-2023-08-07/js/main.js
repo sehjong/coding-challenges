@@ -17,5 +17,10 @@
 
 // create a function expression that takes an array of integers and an integer n
 const findAll = (arr, n) => {
-    
+    let newArr = [];
+    arr.forEach((e, i) => {
+        if (e === n) {
+            newArr.push(i);
+        }
+    })
 }
