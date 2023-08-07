@@ -23,4 +23,5 @@ const findAll = (arr, n) => {
             newArr.push(i);
         }
     })
+    return newArr;
 }
