@@ -20,5 +20,5 @@
 
 // create a function that takes in a string of letters, numbers, words, symbols, and a separator character
 function strToNum(str, sep) {
-
+    return str.split(' ').map((e, i, a) => a.filter(char => char === e).length).join(sep);
 }
