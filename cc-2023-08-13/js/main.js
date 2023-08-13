@@ -24,4 +24,5 @@ function minMoves(str1, str2) {
     let i = str1.length, j = str2.length;
     while (i >= 0 && j >= 0 && str1[i] == str2[j])
         i--, j--;
+    return (i + 1) + (j + 1);
 }
