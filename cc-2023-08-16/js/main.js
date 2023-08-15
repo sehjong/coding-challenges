@@ -15,5 +15,5 @@
 
 // create a function named "solution" that takes two string arguments: full_text and search_text
 function solution(fullText, searchText) {
-    
+    fullText.split(searchText).length - 1;
 }
