@@ -23,5 +23,5 @@
 
 // create a function that takes in three integers
 function twoArePositive(a, b, c) {
-
+    [...arguments].filter(i => i > 0).length === 2;
 }
