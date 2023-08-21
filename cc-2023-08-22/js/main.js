@@ -19,5 +19,8 @@
 
 // create a function that takes in a string and an array of index numbers
 function scramble(str, arr) {
-    
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        result[arr[i]] = str[i];
+    }
 }
