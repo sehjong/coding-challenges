@@ -17,5 +17,5 @@
 
 // create a function that takes in two arrays
 function appendArrays(arr1, arr2) {
-    
+    arr1.concat(arr2);
 }
