@@ -18,5 +18,5 @@
 
 // create a function expression that takes in three parameters: word1, word2, and a letter
 const stringMerge = (word1, word2, letter) => {
-    
+    word1.slice(0, word1.indexOf(letter)) + word2.slice(word2.indexOf(letter));
 }
