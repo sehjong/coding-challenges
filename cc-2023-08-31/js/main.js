@@ -13,5 +13,5 @@
 
 // create a function that takes in two arrays of integers m and n
 function duplicateElements(m, n) {
-    
+    m.some(e => n.includes(e));
 }
