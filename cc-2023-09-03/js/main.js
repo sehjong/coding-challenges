@@ -29,5 +29,11 @@
 // represented as an array of arrays,
 // where each element in the matrix is an integer
 function sum(matrix) {
-    
+    let mainDiagonalSum = 0;
+    let secondaryDiagonalSum = 0;
+
+    for (let i = 0; i < matrix.length; i++) {
+        mainDiagonalSum += matrix[i][i];
+        secondaryDiagonalSum += matrix[i][matrix.length - 1 - i];
+    }
 }
