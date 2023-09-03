@@ -36,4 +36,6 @@ function sum(matrix) {
         mainDiagonalSum += matrix[i][i];
         secondaryDiagonalSum += matrix[i][matrix.length - 1 - i];
     }
+    
+    return mainDiagonalSum + secondaryDiagonalSum;
 }
