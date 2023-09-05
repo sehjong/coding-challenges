@@ -22,5 +22,12 @@
 
 // create a function that takes in a data type
 function reverseIt(data) {
-
+    if (typeof data === 'string') {
+        return data.split('').reverse().join('');
+    }
+    if (typeof data === 'number') {
+        const numToString = data.toString();
+        const reversedNum = numToString.split('').reverse().join('');
+        return parseInt(reversedNum);
+    }
 }
