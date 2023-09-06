@@ -30,4 +30,5 @@ function reverseIt(data) {
         const reversedNum = numToString.split('').reverse().join('');
         return parseInt(reversedNum);
     }
+    return data;
 }
