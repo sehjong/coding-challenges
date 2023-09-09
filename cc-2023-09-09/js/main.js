@@ -26,4 +26,5 @@ function sillyCase(str) {
     const midpoint = Math.ceil(str.length / 2);
     const firstHalf = str.slice(0, midpoint).toLowerCase();
     const secondHalf = str.slice(midpoint).toUpperCase();
+    return firstHalf + secondHalf;
 }
