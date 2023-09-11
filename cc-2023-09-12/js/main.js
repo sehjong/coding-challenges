@@ -13,5 +13,14 @@
 
 // create a function that takes in a string of text
 function countConsonants(str) {
-    
+    let consonantCount = 0;
+    const lowerCaseStr = str.toLowerCase();
+    const vowels = 'aeiou';
+
+    for (let i = 0; i < lowerCaseStr.length; i++) {
+        const char = lowerCaseStr[i];
+            if (char >= 'a' && char <= 'z' && !vowels.includes(char)) {
+                consonantCount++;
+            }
+    }
 }
