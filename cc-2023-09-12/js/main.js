@@ -23,4 +23,5 @@ function countConsonants(str) {
                 consonantCount++;
             }
     }
+    return consonantCount;
 }
