@@ -15,5 +15,10 @@
 
 // create a function that takes in an array of names
 function capitalizeFirstLetter(names) {
-    
+    const capitalizedNames = [];
+
+    for (let i = 0; i < names.length; i++) {
+        const capitalized = names[i].toLowerCase().charAt(0).toUpperCase() + names[i].substring(1);
+        capitalizedNames.push(capitalized);
+    }
 }
