@@ -9,16 +9,14 @@
 
 // P: an array of names
 // R: an array of each name with its first letter capitalized
-// E: capitalizeFirstLetter(['jo', 'nelson', 'jurie'])     // returns ['Jo', 'Nelson', 'Jurie']
-//    capitalizeFirstLetter(['KARLY', 'DANIEL', 'KELSEY']) // returns ['Karly', 'Daniel', 'Kelsey']
+// E: capitalizeFirstLetter(['jo', 'nelson', 'jurie']);     // returns ['Jo', 'Nelson', 'Jurie']
+//    capitalizeFirstLetter(['KARLY', 'DANIEL', 'KELSEY']); // returns ['Karly', 'Daniel', 'Kelsey']
 // P:
 
 // create a function that takes in an array of names
 function capitalizeFirstLetter(names) {
-    const capitalizedNames = [];
-
-    for (let i = 0; i < names.length; i++) {
-        const capitalized = names[i].toLowerCase().charAt(0).toUpperCase() + names[i].substring(1);
-        capitalizedNames.push(capitalized);
-    }
+    return names.map(name => {
+        const lowerCaseName = name.toLowerCase();
+        return lowerCaseName.charAt(0).toUpperCase() + lowerCaseName.substring(1);
+    });
 }
