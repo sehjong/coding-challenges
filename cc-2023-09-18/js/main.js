@@ -17,5 +17,15 @@
 
 // create a function called isAllPossibilities that takes in an array of integers
 function isAllPossibilities(arr) {
+    let expectedSum = 0;
 
+    for (let i = 0; i < arr.length; i++) {
+        const num = arr[i];
+
+        if (num < 0 || num >= arr.length) {
+            return false;
+        }
+
+        expectedSum += num;
+    }
 }
