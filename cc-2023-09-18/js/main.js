@@ -28,4 +28,8 @@ function isAllPossibilities(arr) {
 
         expectedSum += num;
     }
+
+    const expectedSumAll = (arr.length - 1) * arr.length / 2;
+
+    return expectedSum === expectedSumAll;
 }
