@@ -21,5 +21,5 @@
 
 // create a method called 'sum' to the prototype of the Array object
 Array.prototype.sum = function () {
-    this.reduce((acc, c) => acc + c, 0);
+    return this.reduce((acc, c) => acc + c, 0);
 }
