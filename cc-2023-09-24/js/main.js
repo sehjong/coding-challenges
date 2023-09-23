@@ -15,5 +15,11 @@
 
 // create a function that takes in an array of numbers
 function evenLast(arrNums) {
-    
+    const result = arrNums.reduce((acc, c, i) => {
+        if (i % 2 === 0) {
+            return acc + c;
+        } else {
+            return acc;
+        }
+    }, 0);
 }
