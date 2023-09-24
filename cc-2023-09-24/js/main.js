@@ -22,4 +22,5 @@ function evenLast(arrNums) {
             return acc;
         }
     }, 0);
+    return result * (arrNums[arrNums.length - 1] || 0);
 }
