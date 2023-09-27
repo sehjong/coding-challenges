@@ -28,4 +28,12 @@ function calculateScore(x) {
     } else {
         return 'Void!';
     }
+
+    const result = [];
+
+    for (let i = 0; i < score; i++) {
+        result.push([...x]);
+    }
+
+    return result;
 }
