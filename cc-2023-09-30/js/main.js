@@ -11,5 +11,9 @@
 
 // create a function that takes in two arrays
 function mergeArrays(array1, array2) {
-    
+    const result = [];
+
+    for (let i = 0; i < array1.length; i++) {
+        result.push(array1[i], array2[i]);
+    }
 }
