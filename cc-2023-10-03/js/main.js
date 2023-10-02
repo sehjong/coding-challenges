@@ -13,5 +13,5 @@
 
 // create a function that takes in a binary number formatted as a string
 function onesComplement(n) {
-    
+    [...n].map(e => e === '0' ? '1' : '0').join('');
 }
