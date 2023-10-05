@@ -14,7 +14,5 @@
 //    'red blue gold' //returns gold
 // P:
 
-// create a function that takes in a string of space-separated words
-function longestWord(stringOfWords) {
-
-}
+// create a function expression that takes in a string of space-separated words
+let longestWord = stringOfWords => stringOfWords.split('').reduceRight((acc, c) => (c.length > acc.length) ? c : acc);
