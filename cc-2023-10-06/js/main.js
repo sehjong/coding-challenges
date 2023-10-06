@@ -15,4 +15,4 @@
 // P:
 
 // create a function expression that takes in a string of space-separated words
-let longestWord = stringOfWords => stringOfWords.split('').reduceRight((acc, c) => (c.length > acc.length) ? c : acc);
+let longestWord = stringOfWords => stringOfWords.split(' ').reduceRight((acc, c) => (c.length > acc.length) ? c : acc);
