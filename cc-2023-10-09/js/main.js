@@ -15,5 +15,6 @@
 
 // create a function that takes in an array of numbers and strings
 function doubleSort(arr) {
-
+    let num = arr.filter(e => typeof e === 'number').sort((a, b) => a - b);
+    let str = arr.filter(e => typeof e === 'string').sort();
 }
