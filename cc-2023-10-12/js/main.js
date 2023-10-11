@@ -25,5 +25,12 @@
 
 // create a function that takes in a string
 function solve(str, k) {
+    const abc = 'abcdefghijklmnopqrstuvwxyz';
 
+    for (let i = 0; i < abc.length; i += 1) {
+        while (k > 0 && str.includes(abc[i])) {
+            str = str.replace(abc[i], '');
+            k -= 1;
+        }
+    }
 }
