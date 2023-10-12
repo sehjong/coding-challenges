@@ -33,4 +33,6 @@ function solve(str, k) {
             k -= 1;
         }
     }
+
+    return str;
 }
