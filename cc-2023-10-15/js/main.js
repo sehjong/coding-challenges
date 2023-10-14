@@ -15,5 +15,17 @@
 
 // create a function that takes in a string with a length greater than 0
 function moveTen(str) {
+    const shift = 10;
+    const abc = 'abcdefghijklmnopqrstuvwxyz';
 
+    return str
+        .split('')
+        .map(e => {
+            if (abc.includes(e.toLowerCase())) {
+                const isUpperCase = e === e.toUpperCase();
+                const i = (abc.indexOf(e.toLowerCase()) + shift) % 26;
+                return isUpperCase ? abc[i].toUpperCase() : abc[i];
+            }
+            return e;
+        })
 }
