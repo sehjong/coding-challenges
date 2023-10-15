@@ -28,4 +28,5 @@ function moveTen(str) {
             }
             return e;
         })
+        .join('');
 }
