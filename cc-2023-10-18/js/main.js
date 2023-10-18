@@ -23,5 +23,5 @@
 
 // create a function that takes in a sorted array and a value
 function keepOrder(arr, val) {
-    arr.filter(e => e < val)
+    return arr.filter(e => e < val).length;
 }
