@@ -16,5 +16,8 @@
 
 // create a function that takes in two parameters, a query string and an array of strings to search
 function wordSearch(query, seq) {
-    
+    query = query.toLowerCase();
+    let res = seq.filter(function(item) {
+        return item.toLowerCase().indexOf(query) !== -1;
+    })
 }
