@@ -20,4 +20,5 @@ function wordSearch(query, seq) {
     let res = seq.filter(function(item) {
         return item.toLowerCase().indexOf(query) !== -1;
     })
+    return res.length ? res : ["Empty"];
 }
