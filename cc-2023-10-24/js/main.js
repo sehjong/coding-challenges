@@ -18,5 +18,14 @@
 
 // create a function that takes in a string
 function moveVowel(input) {
-    
+    let consonants = '';
+    let vowels = '';
+
+    for (let i = 0; i < input.length; i++) {
+        if ('aeiouAEIOU'.indexOf(input.charAt(i)) == -1) {
+            consonants += input.charAt(i);
+        } else {
+            vowels += input.charAt(i);
+        }
+    }
 }
