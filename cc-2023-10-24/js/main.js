@@ -28,4 +28,6 @@ function moveVowel(input) {
             vowels += input.charAt(i);
         }
     }
+
+    return consonants + vowels;
 }
