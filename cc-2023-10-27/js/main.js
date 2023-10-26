@@ -13,5 +13,15 @@
 
 // create a function that takes in two arrays of numbers
 function compoundArray(arr1, arr2) {
-    
+    const newArr = [];
+    const maxLength = Math.max(arr1.length, arr2.length);
+
+    for (let i = 0; i < maxLength; i++) {
+        if (i < arr1.length) {
+            newArr.push(arr1[i]);
+        }
+        if (i < arr2.length) {
+            newArr.push(arr2[i]);
+        }
+    }
 }
