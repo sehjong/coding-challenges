@@ -15,5 +15,5 @@
 
 // create a function that takes in an array of strings
 function arrayLowerCase(arr) {
-    arr.map(x => typeof x === 'string' ? x.toLowerCase() : x);
+    return arr.map(x => typeof x === 'string' ? x.toLowerCase() : x);
 }
