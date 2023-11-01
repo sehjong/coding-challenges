@@ -21,5 +21,11 @@
 
 // create a function expression that takes in a string of numbers 0-9
 const areSameElementsGrouped = str => {
+    const uniqueElements = new Set();
+    let previousElement;
 
+    for (const element of str)
+        if (!uniqueElements.has(element))
+            uniqueElements.add(previousElement = element);
+        else if (previousElement !== element)
 }
