@@ -28,4 +28,7 @@ const areSameElementsGrouped = str => {
         if (!uniqueElements.has(element))
             uniqueElements.add(previousElement = element);
         else if (previousElement !== element)
+            return false;
+
+    return true;
 }
