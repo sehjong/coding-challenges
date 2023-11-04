@@ -45,5 +45,5 @@
 
 // create a function that takes in two parameters, an array of objects (list), and a string (sortBy)
 function sortList(list, sortBy) {
-    
+    list.sort((a, b) => b[sortBy] - a[sortBy]);
 }
