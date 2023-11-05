@@ -45,5 +45,43 @@
 
 // create a function that takes in two parameters, an array of objects (list), and a string (sortBy)
 function sortList(list, sortBy) {
-    list.sort((a, b) => b[sortBy] - a[sortBy]);
+    return list.sort((a, b) => b[sortBy] - a[sortBy]);
 }
+
+const inputList = [
+    {'a': 1, 'b': 3},
+    {'a': 3, 'b': 2},
+    {'a': 2, 'b': 40},
+    {'a': 4, 'b': 12}
+];
+
+const sortedList = sortList(inputList, 'a');
+
+console.log(sortedList);
+
+// or
+
+console.log('Input:', inputList);
+console.log('Output:', sortedList);
+
+// or
+
+console.log('Input:', inputList, '\nOutput:', sortedList);
+
+// or
+
+console.log('Input:', inputList, 'Output:', sortedList);
+
+// or
+
+console.log('Input:');
+console.log(inputList);
+
+console.log('\nOutput:');
+console.log(sortedList);
+
+// or
+
+// console.log('Input:', inputList);
+// const sortedList = sortList(inputList, 'a'); // cannot redeclare block-scoped variable 'sortedList'
+// console.log('Sorted Output:', sortedList);
