@@ -17,7 +17,8 @@
 
 // create a function that takes in an array of integers
 function sumLength(arr) {
-    const result = [arr.reduce((a, b) => a + ((b > 0) * b), 0)]
-    result.push(arr.reduce((a, b) => a + (b < 0), 0))
-    result[1] += Math.ceil(arr.filter(num => num === 0).length / 2)
+    const result = [arr.reduce((a, b) => a + ((b > 0) * b), 0)];
+    result.push(arr.reduce((a, b) => a + (b < 0), 0));
+    result[1] += Math.ceil(arr.filter(num => num === 0).length / 2);
+    return result.join(' ');
 }
