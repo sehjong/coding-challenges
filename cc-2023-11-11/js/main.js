@@ -15,5 +15,12 @@
 
 // create a function that takes in an array of strings
 function arrange(arr) {
-    
+    const convWt = wt => {
+        if (wt.slice(-2) === 'KG')
+            return wt.slice(0, -2) * 1;
+        else if (wt.slice(-1) === 'T')
+            return wt.slice(0, -1) * 1000;
+        else
+            return wt.slice(0, -1) * 0.001;
+    }
 }
