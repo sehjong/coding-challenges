@@ -23,4 +23,5 @@ function arrange(arr) {
         else
             return wt.slice(0, -1) * 0.001;
     }
+    return arr.sort((a, b) => convWt(a) - convWt(b));
 }
