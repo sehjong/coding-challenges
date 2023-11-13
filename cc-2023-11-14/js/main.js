@@ -37,5 +37,17 @@
 
 // create a function that takes in an array of any data type
 function secondLargest(arr) {
-    
+    if (!Array.isArray(arr)) {
+        return undefined;
+    }
+
+    const numbers = arr.filter(item => typeof item === 'number' || !isNaN(Number(item)));
+
+    const uniqueNumbers = [...new Set(numbers)];
+
+    const sortedNumbers = uniqueNumbers.sort((a, b) => b - a);
+
+    if (sortedNumbers.length < 2) {
+        return undefined;
+    }
 }
