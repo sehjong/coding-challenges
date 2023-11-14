@@ -50,4 +50,6 @@ function secondLargest(arr) {
     if (sortedNumbers.length < 2) {
         return undefined;
     }
+
+    return sortedNumbers[1];
 }
