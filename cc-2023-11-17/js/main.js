@@ -35,4 +35,5 @@
 // create a function that takes in an array
 function falsyOrTruthy(arr) {
     const isCountEven = arr.length % 2 > 0;
+    return arr.filter(e => !e == isCountEven);
 }
