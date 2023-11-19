@@ -32,5 +32,13 @@
 // P:
 
 function findMissingNumber(sequence) {
-   
+    if (sequence === '') return 0;
+
+    const numArr = sequence.split(' ').map(Number);
+    if (numArr.some(isNaN)) return 1;
+
+    const numSet = new Set(numArr);
+    for (let i = 1; i <= numArr.length; i++) {
+        if (!numSet.has(i)) return i;
+    }
 }
