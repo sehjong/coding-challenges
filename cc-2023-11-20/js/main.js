@@ -41,4 +41,5 @@ function findMissingNumber(sequence) {
     for (let i = 1; i <= numArr.length; i++) {
         if (!numSet.has(i)) return i;
     }
+    return 0;
 }
