@@ -26,4 +26,6 @@ function sequenceSum(arrNums) {
         .map(e => e > 0 ? e * e : e)
         .map((e, i) => (i + 1) % 3 === 0 ? e * 3 : e)
         .map((e, i) => (i + 1) % 5 === 0 ? e * -1 : e);
+
+    return modifiedArray.reduce((acc, c) => acc + c, 0);
 }
