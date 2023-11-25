@@ -13,5 +13,16 @@
 
 // create a function that takes in an array of numbers in string format
 function convert(arrNums) {
-    
+    return arrNums.map(e =>
+        {
+            if (e === '27') {
+                return '!';
+            } else if (e === '28') {
+                return '?';
+            } else if (e === '29') {
+                return ' ';
+            } else {
+                return String.fromCharCode(123 - e);
+            }
+        })
 }
