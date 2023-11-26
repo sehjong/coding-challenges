@@ -24,5 +24,5 @@ function convert(arrNums) {
             } else {
                 return String.fromCharCode(123 - e);
             }
-        })
+        }).join('');
 }
