@@ -23,5 +23,10 @@
 
 // create a function that an array of integers (x) and a target integer (t)
 function removeSecondNum(x, t) {
-
+    for (let i = 0; i < x.length - 1; i++) {
+        if (x[i] + x[i + 1] === t) {
+            x.splice(i + 1, 1);
+            i--;
+        }
+    }
 }
