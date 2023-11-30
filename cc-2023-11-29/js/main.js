@@ -29,4 +29,5 @@ function removeSecondNum(x, t) {
             i--;
         }
     }
+    return x;
 }
