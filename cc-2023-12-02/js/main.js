@@ -30,4 +30,5 @@
 function move_zeros(arrNum, isRight = true) {
     let zeros = arrNum.filter((num) => num === 0);
     let nonZeros = arrNum.filter((num) => num !== 0);
+    return isRight ? [...nonZeros, ...zeros] : [...zeros, ...nonZeros];
 }
