@@ -15,5 +15,15 @@
 
 // create a function that takes in a string
 function sortWords(str) {
-    
+    return str
+        .split(' ')
+        .filter(word => {
+            const firstChar = word[0];
+            return (firstChar >= 'a' && firstChar <='z') || (firstChar >= 'A' && firstChar <= 'Z');
+        })
+        .sort((a, b) => {
+            const aFirstChar = a[0];
+            const bFirstChar = b[0];
+            return aFirstChar < 'a' && bFirstChar >= 'a' ? -1 : aFirstChar >= 'a' && bFirstChar < 'a' ? 1 : 0;
+        })
 }
