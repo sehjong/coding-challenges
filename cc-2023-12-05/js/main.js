@@ -26,4 +26,5 @@ function sortWords(str) {
             const bFirstChar = b[0];
             return aFirstChar < 'a' && bFirstChar >= 'a' ? -1 : aFirstChar >= 'a' && bFirstChar < 'a' ? 1 : 0;
         })
+        .join(' ');
 }
