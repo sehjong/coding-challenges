@@ -23,5 +23,17 @@
 
 // create a function that takes in a string of random lower-case letters
 function countConsecutiveVowels(str) {
-    
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    let count = 0;
+    let expectedVowel = 'a';
+
+    for (let char of str) {
+        if (vowels.includes(char)) {
+            if (char === expectedVowel) {
+                count++;
+                expectedVowel = vowels[(vowels.indexOf(char) + 1) % vowels.length];
+
+            }
+        }
+    }
 }
