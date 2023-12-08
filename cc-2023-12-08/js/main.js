@@ -36,4 +36,6 @@ function countConsecutiveVowels(str) {
             }
         }
     }
+
+    return count;
 }
