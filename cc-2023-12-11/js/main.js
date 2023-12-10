@@ -22,5 +22,5 @@
 
 // create a function expression that takes in an array which includes some empty indices (with no element(s))
 const removeEmptyItems = arr => {
-
+    return arr.filter(e => true);
 }
