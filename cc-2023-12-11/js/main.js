@@ -21,6 +21,19 @@
 // P:
 
 // create a function expression that takes in an array which includes some empty indices (with no element(s))
-const removeEmptyItems = arr => {
-    return arr.filter(e => true);
-}
+const removeEmptyItems = arr => arr.filter(e => true);
+
+// Test Case with Empty Indices and Null/Undefined
+console.log(removeEmptyItems([1, 2, 3, , , , 4, , null, undefined]), [1, 2, 3, 4, null, undefined]);
+
+// Test Case with No Empty Indices
+console.log(removeEmptyItems([5, 6, 7, 'a', 'b', 'c']), [5, 6, 7, 'a', 'b', 'c']);
+
+// Test Case with Empty Indices at the Start
+console.log(removeEmptyItems([, , 'x', 'y', 'z']), ['x', 'y', 'z']);
+
+// Test Case with Empty Indices in the Middle
+console.log(removeEmptyItems(['p', 'q', , 'r', 's']), ['p', 'q', 'r', 's']);
+
+// Test Case with Empty Indices at the End
+console.log(removeEmptyItems(['m', 'n', 'o', , ,]), ['m', 'n', 'o']);
