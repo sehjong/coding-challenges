@@ -17,5 +17,12 @@
 
 // create a function that takes in a string
 function charConcat(str) {
-    
+    let i = 1;
+    let res = '';
+
+    while (str.length > 1) {
+        res += str.charAt(0) + str.charAt(str.length - 1) + i;
+        i++;
+        str = str.slice(1, -1);
+    }
 }
