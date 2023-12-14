@@ -25,4 +25,6 @@ function charConcat(str) {
         i++;
         str = str.slice(1, -1);
     }
+
+    return res;
 }
