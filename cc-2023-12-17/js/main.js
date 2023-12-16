@@ -20,5 +20,10 @@
 
 // create a function that takes in a natural number
 function twoCount(num) {
+    let count = 0;
 
+    while (num % 2 === 0) {
+        count++;
+        num /= 2;
+    }
 }
