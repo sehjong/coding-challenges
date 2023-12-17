@@ -26,4 +26,6 @@ function twoCount(num) {
         count++;
         num /= 2;
     }
+
+    return count;
 }
