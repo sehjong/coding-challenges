@@ -20,5 +20,5 @@
 
 // extend Array.prototype with a method .max() to create a function that returns the largest number in the array
 Array.prototype.max = function() {
-
+    return Math.max();
 }
