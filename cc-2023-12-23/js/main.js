@@ -49,4 +49,12 @@ const primes = (start, end) => {
 // check if it is prime using the isPrime helper function expression,
         if (isPrime(i)) arr.push(i); // if i is prime, push it into the array
     }
+// after the loop, check if the array is empty,
+// if it's not empty, return the array,
+// if it's empty, return null to indicate that there are no prime numbers in the specified range
+    return arr.length ? arr : null;
 }
+
+console.log(primes(5, 7), [5, 7]);
+console.log(primes(8, 9), null);
+console.log(primes(1, 10), [2, 3, 5, 7]);
