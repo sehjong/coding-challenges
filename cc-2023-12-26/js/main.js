@@ -15,5 +15,9 @@
 
 // create a function args_count() that takes a variable number of arguments
 function args_count() {
-    
+// use the locally available arguments object for non-arrow syntax functions,
+// which contains the values passed to this function as an array-like object,
+// to return the count of each argument received by the function,
+// with the length property
+    return arguments.length;
 }
