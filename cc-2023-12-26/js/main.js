@@ -21,3 +21,7 @@ function args_count() {
 // with the length property
     return arguments.length;
 }
+
+console.log(args_count(), 0);
+console.log(args_count('a'), 1);
+console.log(args_count('a', 'b'), 2);
