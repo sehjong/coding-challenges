@@ -31,5 +31,23 @@
 // the properties of these objects are key-value pairs,
 // where the values are numeric
 function combine() {
-    
+// initialize an empty object
+    let obj = {};
+
+// iterate over each argument passed to the function,
+// using the locally available arguments object for non-arrow syntax functions,
+// which contains the values passed to this function as an array-like object
+    for (let i = 0; i < arguments.length; i++) {
+// iterate over each key in the current object
+        for (let key in arguments[i]) {
+// check if the key already exists in the object,
+// if it does, add the current value to the existing value,
+// if it doesn't, set the value for that key in the object,
+// to its current value from the arguments
+            obj[key] = obj[key] ? obj[key] + arguments[i][key] : arguments[i][key];
+        }
+    }
+
+// return the combined object
+    return obj;
 }
