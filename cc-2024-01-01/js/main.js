@@ -22,5 +22,5 @@
 
 // create a function that takes in an array of integers
 function oddOne(arr) {
-
+    return arr.findIndex(num => num % 2 != 0);
 }
