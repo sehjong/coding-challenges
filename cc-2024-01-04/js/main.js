@@ -21,5 +21,17 @@
 // a number x for the starting point of the sequence,
 // and a number n for the length of the array to be returned
 function squares(x, n) {
+// initialize an empty array
+    let result = [];
 
+// iterate from 0 up to (but not including) n
+    for (let i = 0; i < n; i++) {
+// append the current value of x to the result array
+        result.push(x);
+// square x for the next iteration
+        x *= x;
+    }
+
+// return the array containing the sequence
+    return result;
 }
