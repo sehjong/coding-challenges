@@ -14,9 +14,11 @@
 // P:
 
 // create a function expression that takes in an array of integers
-let noOdds = values => {
-// return a filtered array from values,
+// implicitly return a filtered array from values,
 // where each element e returns true if e mod 2 is equal in type and value to 0,
 // meaning e is even
-    return values.filter(e => e % 2 === 0);
-}
+let noOdds = values => values.filter(e => e % 2 === 0);
+
+console.log(noOdds([0, 1]), [0]);
+console.log(noOdds([0, 1, 2, 3]), [0, 2]);
+console.log(noOdds([-3, -2, -1, 0, 1, 2, 3]), [-2, 0, 2]);
