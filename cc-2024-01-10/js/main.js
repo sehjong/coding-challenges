@@ -21,5 +21,6 @@
 // a function that will be called with a list of arguments,
 // and an array containing those arguments to be applied to that function
 function spread(func, args) {
-    
+// use the spread operator/syntax "..." to expand the array's elements into individual arguments
+    return func(...args);
 }
