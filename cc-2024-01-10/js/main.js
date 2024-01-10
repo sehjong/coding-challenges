@@ -24,3 +24,36 @@ function spread(func, args) {
 // use the spread operator/syntax "..." to expand the array's elements into individual arguments
     return func(...args);
 }
+
+// Unlike statically typed languages like C or Java, JavaScript is a dynamically typed language,
+// and can infer variable types from assigned values, which may change during runtime.
+// This type coercion in JavaScript may not always produce the desired or expected result.
+
+// this evaluates to '2Foobar':
+// in JavaScript, the boolean 'true' is coerced to 1 when involved in arithmetic operations,
+// therefore, 1 (number) + true (coerced to 1) results in 2, 
+// the remaining string arguments "Foo" and "bar" are concatenated, resulting in '2Foobar'
+function someFunction(a, b, c, d) {
+    return a + b + c + d;
+}
+
+// this evaluates to '1trueFoobar':
+// this version sanitizes the inputs by explicitly converting all arguments to strings,
+// and ensures that the arguments are concatenated as strings without arithmetic coercion,
+// as a result, it evaluates to '1trueFoobar'
+function someFunction(a, b, c, d) {
+    return String(a) + String(b) + c + d;
+}
+
+function add(a, b) {
+    return a + b;
+}
+
+function minus(a, b) {
+    return a - b;
+}
+
+console.log(spread(someFunction, [1, true, 'Foo', 'bar']), '2Foobar');
+console.log(spread(someFunction, [1, true, 'Foo', 'bar']), '1trueFoobar');
+console.log(spread(add, [1,2]), 3);
+console.log(spread(minus, [9,2]), 7);
