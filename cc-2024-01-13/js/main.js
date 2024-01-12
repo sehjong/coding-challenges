@@ -17,5 +17,8 @@
 
 // create a function that takes in a sring of words
 function last(x) {
-
+// split the string into an array of words using space as the delimiter,
+// sort the order of words in the array using a comparison,
+// that compares the last character of each word
+    return x.split(' ').sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1));
 }
