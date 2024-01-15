@@ -38,5 +38,11 @@
 
 // create a function that takes in an integer n and an integer d representing the number of last digits to return
 function lastDigit(n, d) {
-
+// convert the integer n to a string, then split it into an array of its individual characters (digits),
+// map each character (digit) back to a number
+    const nums = String(n).split('').map(Number);
+// determine the length of the nums array
+    const totalDigits = nums.length;
+// initialize an index counter to keep track of the current position in the array
+    let currentIndex = 0;
 }
