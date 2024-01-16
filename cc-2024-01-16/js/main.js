@@ -45,4 +45,12 @@ function lastDigit(n, d) {
     const totalDigits = nums.length;
 // initialize an index counter to keep track of the current position in the array
     let currentIndex = 0;
+// use the filter method to include only the elements where the current index is greater than or equal to (totalDigits - d),
+// this ensures that only the last d digits are included in the returned array,
+// the index is incremented on each iteration
+    return nums.filter(e => currentIndex++ >= totalDigits - d);
 }
+
+console.log(lastDigit(1, 1), [1]);
+console.log(lastDigit(1234, 2), [3, 4]);
+console.log(lastDigit(637547, 6), [6, 3, 7, 5, 4, 7]);
