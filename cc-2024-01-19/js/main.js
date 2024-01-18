@@ -24,5 +24,9 @@
 // it's an example of how coding challenges often introduce unique problems or concepts to test problem-solving skills,
 // algorithmic thinking, and coding ability
 function stantonMeasure(arrNums) {
-
+// count occurrences of a number in the array
+    const count = n => arrNums.filter(e => e === n).length;
+// count(1): count how many times the number of 1s appears in the array,
+// count(count(1)): then calculate how many times n itself appears in the array
+    return count(count(1));
 }
