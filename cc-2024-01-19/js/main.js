@@ -30,3 +30,7 @@ function stantonMeasure(arrNums) {
 // count(count(1)): then calculate how many times n itself appears in the array
     return count(count(1));
 }
+
+console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2]), 3);
+console.log(stantonMeasure([1, 4, 1, 2, 11, 2, 3, 1]), 1);
+console.log(stantonMeasure([2, 3, 4, 5]), 0);
