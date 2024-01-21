@@ -20,5 +20,7 @@
 
 // create a function that takes in an array of numbers
 function double(array) {
-
+// use the map() method to double the values of the input array,
+// the map() method does not modify or mutate the original array and returns a new array
+    return array.map(x => x * 2);
 }
