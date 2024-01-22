@@ -24,3 +24,7 @@ function double(array) {
 // the map() method does not modify or mutate the original array and returns a new array
     return array.map(x => x * 2);
 }
+
+console.log(double([1, 2, 10, 57]), [2, 4, 20, 114]);
+console.log(double([0, -1, 5]), [0, -2, 10]);
+console.log(double([0]), [0]);
