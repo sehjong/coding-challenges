@@ -18,8 +18,16 @@
 //    "RRRRGGGGBBBB" => 9
 // P:
 
-// create a functio that take in a string representing a row of stones, where each stone is indicated by R, G, and B,
+// create a function that takes in a string representing a row of stones, where each stone is indicated by R, G, and B,
 // for the colors red, green, and blue
 function solve(stones) {
-    
+// initialize a counter for the number of times adjacent stones are similar
+    let count = 0;
+// loop through the stones starting from the second one
+    for (let i = 1; i < stones.length; i++) {
+// if the current stone is the same as the previous, increment count
+        if (stones[i] === stones[i - 1]) {
+            count++;
+        }
+    }
 }
