@@ -23,6 +23,7 @@
 function solve(stones) {
 // initialize a counter for the number of times adjacent stones are similar
     let count = 0;
+
 // loop through the stones starting from the second one
     for (let i = 1; i < stones.length; i++) {
 // if the current stone is the same as the previous, increment count
@@ -30,4 +31,11 @@ function solve(stones) {
             count++;
         }
     }
+
+// return the result
+    return count;
 }
+
+console.log(solve('RGBRGBRGGB'), 1);
+console.log(solve('RGGRGBBRGRR'), 3);
+console.log(solve('RRRRGGGGBBBB'), 9);
