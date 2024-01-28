@@ -35,6 +35,7 @@ function countDivisors(n) {
     // this immediate return for n == 1 makes this function more efficient for this specific input
     // if n is 1, return 1 since 1 has only one divisor (itself)
     if (n == 1) return 1;
+
     // check for perfect square
     if (n % Math.sqrt(n) == 0) count++;
 
@@ -46,4 +47,12 @@ function countDivisors(n) {
             count += 2;
         }
     }
+
+    // return the total count of divisors
+    return count;
 }
+
+console.log(countDivisors(4), 3);
+console.log(countDivisors(5), 2);
+console.log(countDivisors(12), 6);
+console.log(countDivisors(30), 8);
