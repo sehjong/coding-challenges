@@ -35,5 +35,12 @@
 
 // create a function that takes in an array of integers
 function adjacentElementsProduct(arrNums) {
+    // array to hold the products of adjacent elements
+    let newArr = [];
 
+    // loop through the array
+    for (let i = 0; i < arrNums.length - 1; i++) {
+        // push the product of adjacent elements
+        newArr.push(arrNums[i] * arrNums[i + 1]);
+    }
 }
