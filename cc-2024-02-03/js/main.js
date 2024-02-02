@@ -25,5 +25,15 @@
 // where every preceding number is smaller than the one following it,
 // and some numbers will be missing
 function findMissingNumbers(arrNums) {
+    // initialize array for missing numbers
+    let missingNums = [];
 
+    // loop from first to last element in arrNums
+    for (let i = arrNums[0]; i < arrNums[arrNums.length - 1]; i++) {
+        // if the current number is missing in arrNums
+        if (arrNums.indexOf(i) === -1) {
+            // add it to missingNums
+            missingNums.push(i);
+        }
+    }
 }
