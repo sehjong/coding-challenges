@@ -36,4 +36,11 @@ function findMissingNumbers(arrNums) {
             missingNums.push(i);
         }
     }
+
+    // return the array of missing numbers
+    return missingNums;
 }
+
+console.log(findMissingNumbers([-3, -2, 1, 5]), [-1, 0, 2, 3, 4]);
+console.log(findMissingNumbers([0, 1, 3, 5, 7]), [2, 4, 6]);
+console.log(findMissingNumbers([-5, -3, -1, 2, 4]), [-4, -2, 0, 1, 3]);
