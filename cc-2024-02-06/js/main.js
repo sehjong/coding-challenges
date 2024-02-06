@@ -15,5 +15,9 @@
 
 // create a function that takes in an array of integers in the form of strings
 function parseNumbers(intStr) {
-    
+    // use the map function to iterate over each element in the input array
+    return intStr.map(function(i) {
+        // convert each string to an integer using parseInt and return the new array
+        return parseInt(i);
+    });
 }
