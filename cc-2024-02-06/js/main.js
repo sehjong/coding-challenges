@@ -21,3 +21,7 @@ function parseNumbers(intStr) {
         return parseInt(i);
     });
 }
+
+console.log(parseNumbers(['10']), [10]);
+console.log(parseNumbers(['-1', '0', '1']), [-1, 0, 1]);
+console.log(parseNumbers(['8', '16', '24', '36']), [8, 16, 24, 36]);
