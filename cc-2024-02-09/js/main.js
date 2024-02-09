@@ -38,3 +38,7 @@
 // stopping the search after finding the first occurrence of the unique integer makes the function more efficient,
 // especially for large arrays
 const solve = intArr => intArr.find(e => !intArr.includes(-e));
+
+console.log(solve([1, -1, 2, -2, 3]), 3);
+console.log(solve([-3, 1, 2, 3, -1, -4, -2]), -4);
+console.log(solve([1, -1, 2, -2, 3, 3]), 3);
