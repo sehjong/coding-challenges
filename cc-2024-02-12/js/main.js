@@ -36,5 +36,26 @@
 // the value of which will always be greater than 0,
 // and a number d between 0 and 9, inclusive, representing the digit to search for within the numbers
 function findNums(x, d) {
+    // initialize count of numbers containing the digit to 0
+    let count = 0;
+    // initialize sum of numbers containing the digit to 0
+    let sum = 0;
+    // initialize product of numbers containing the digit to 1,
+    // starting with 1 ensures that the first multiplication operation has the correct starting point,
+    // otherwise, starting from 0 would result in the product of any series being 0
+    let product = 1;
 
+    // iterate through the range from 1 to x, inclusive
+    for (let i = 1; i <= x; i++) {
+        // convert the current number i to a string and check if it includes the digit d
+        if (String(i).includes(d)) {
+            count++; // increment count for each number found
+            sum += i; // add the number to the sum
+            product *= i; // multiply the product by the number
+        }
+    }
+
+    // if no numbers containing the digit were found, return [0, 0, 0],
+    // otherwise, return the count, sum, and product of the numbers found
+    return count === 0 ? [0, 0, 0] : [count, sum, product];
 }
