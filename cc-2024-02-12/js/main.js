@@ -59,3 +59,7 @@ function findNums(x, d) {
     // otherwise, return the count, sum, and product of the numbers found
     return count === 0 ? [0, 0, 0] : [count, sum, product];
 }
+
+console.log(findNums(11, 1), [3, 22, 110]);
+console.log(findNums(7, 6), [ 1, 6, 6 ]);
+console.log(findNums(5, 6), [ 0, 0, 0 ]);
