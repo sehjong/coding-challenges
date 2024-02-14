@@ -43,5 +43,6 @@
 // P:
 
 function maxMultiple(divisor, bound) {
-
+    // calculate and return the largest number N <= bound that is divisible by divisor
+    return bound - bound % divisor;
 }
