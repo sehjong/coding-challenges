@@ -26,9 +26,8 @@
 // Explanation:
 // (185) is divisible by (37) , (185) is less than or equal to bound (200) , and (185) is > 0 .
 
-// P: the parameters (divisor, bound) passed to the function are only positive values greater than 0,
-//    whereby the number N is divisible by divisor and N is less than or equal to the upper limit of bound
-// R: a number N that is divisible by divisor, less than or equal to bound, and greater than 0
+// P: divisor and bound as natural numbers
+// R: the largest number that is divisible by divisor, less than or equal to bound, and greater than 0
 // E: divisor = 2, bound = 7 ==> return (6)
 //    Explanation:
 //    (6) is divisible by (2) , (6) is less than or equal to bound (7) , and (6) is > 0 .
@@ -42,7 +41,12 @@
 //    (185) is divisible by (37) , (185) is less than or equal to bound (200) , and (185) is > 0 .
 // P:
 
+// create a function that takes in divisor and bound as natural numbers
 function maxMultiple(divisor, bound) {
-    // calculate and return the largest number N <= bound that is divisible by divisor
+    // calculate and return the largest number less than or equal to bound that is divisible by divisor
     return bound - bound % divisor;
 }
+
+console.log(maxMultiple(2, 7), 6);
+console.log(maxMultiple(10, 50), 50);
+console.log(maxMultiple(37, 200), 185);
