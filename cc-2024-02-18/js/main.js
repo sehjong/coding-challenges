@@ -18,7 +18,9 @@
 //    [{1:1},{2:2}] => false
 // P:
 
-// create a function expression that takes in an array
-const arrCheck = arr => {
-    
-}
+// create a function expression that takes in an array,
+// utilize the every() method to iterate over each element of the array,
+// passing the Array.isArray() method as the callback function,
+// which is a static method of the Array global object,
+// to determine whether the provided value is an array, ensuring accurate checks across all elements
+const arrCheck = arr => arr.every(Array.isArray);
