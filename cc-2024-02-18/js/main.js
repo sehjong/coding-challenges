@@ -24,3 +24,9 @@
 // which is a static method of the Array global object,
 // to determine whether the provided value is an array, ensuring accurate checks across all elements
 const arrCheck = arr => arr.every(Array.isArray);
+
+console.log(arrCheck([[1], [2]]), true);
+console.log(arrCheck([[1], '2']), false);
+console.log(arrCheck(['1', [2]]), false);
+console.log(arrCheck(['1', '2']), false);
+console.log(arrCheck([{1:1}, {2:2}]), false);
