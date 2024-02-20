@@ -20,5 +20,11 @@
 
 // create a function that takes in an array of numbers
 function numbersToCharObjects(arrNums) {
-
+    // map each number in the input array to an object where the key is the number as a string,
+    // and the value is the corresponding ASCII character
+    return arrNums.map(e => {
+        return {
+            [e]: String.fromCharCode(e)
+        };
+    });
 }
