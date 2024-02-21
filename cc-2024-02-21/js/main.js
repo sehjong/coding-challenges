@@ -28,3 +28,7 @@ function numbersToCharObjects(arrNums) {
         };
     });
 }
+
+console.log(numbersToCharObjects([118, 117, 120]), [{ '118': 'v' }, { '117': 'u' }, { '120': 'x' }]);
+console.log(numbersToCharObjects([101, 121, 110, 113, 113, 103]), [{ '101': 'e' }, { '121': 'y' }, { '110': 'n' }, { '113': 'q' }, { '113': 'q' }, { '103': 'g' }]);
+console.log(numbersToCharObjects([107, 99, 110, 107, 118, 106, 112, 102]), [{ '107': 'k' }, { '99': 'c' }, { '110': 'n' }, { '107': 'k' }, { '118': 'v' }, { '106': 'j' }, { '112': 'p' }, { '102': 'f' }]);
