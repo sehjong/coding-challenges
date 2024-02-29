@@ -11,7 +11,9 @@
 //    console.log(hasUniqueChars('++-'), false);
 // P:
 
-// create a function expression that takes in a string
-let hasUniqueChars = (str) => {
-    
-}
+// create a function expression that takes in a string,
+// create a Set from the string, automatically removing duplicates,
+// and compare its size to the original string length,
+// if sizes match, all characters were unique, thus return true,
+// otherwise, return false
+let hasUniqueChars = (str) => new Set(str).size === str.length;
