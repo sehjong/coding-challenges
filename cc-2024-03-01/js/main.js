@@ -17,3 +17,7 @@
 // if sizes match, all characters were unique, thus return true,
 // otherwise, return false
 let hasUniqueChars = (str) => new Set(str).size === str.length;
+
+console.log(hasUniqueChars('  nAa'), false);
+console.log(hasUniqueChars('abcdef'), true);
+console.log(hasUniqueChars('++-'), false);
