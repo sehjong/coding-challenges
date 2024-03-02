@@ -1,0 +1,16 @@
+// PREP
+
+// Find the sum of the odd numbers within an array, after cubing the initial integers. The function should return undefined if any of the values aren't numbers.
+
+// P: an array of numbers and potentially other types of values
+// R: a number representing the sum of the cubes of odd numbers found in the input array,
+//    or undefined if any value in the array is not a number
+// E: console.log(sumOfCubedOddNums([1, 2, 3, 4]), 28);
+//    console.log(sumOfCubedOddNums([-5, -5, 5, 5]), 0);
+//    console.log(sumOfCubedOddNums(['a', 2, 3, 4]), undefined);
+// P:
+
+// create a function expression that takes in an array of numbers and potentially other types of values
+let sumOfCubedOddNums = arrNums => {
+
+}
