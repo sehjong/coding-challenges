@@ -12,5 +12,9 @@
 
 // create a function expression that takes in an array of numbers and potentially other types of values
 let sumOfCubedOddNums = arrNums => {
-
+    // check if all elements in the array are numbers
+    let nums = arrNums.every(e => !isNaN(e));
+    // if all elements are numebers, filter the odd numbers, cube them, and sum them up
+    // otherwise, return undefined
+    return nums ? arrNums.filter(e => e % 2).reduce((sum, e) => sum + (e * e * e), 0) : undefined;
 }
