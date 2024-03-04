@@ -14,7 +14,11 @@
 let sumOfCubedOddNums = arrNums => {
     // check if all elements in the array are numbers
     let nums = arrNums.every(e => !isNaN(e));
-    // if all elements are numebers, filter the odd numbers, cube them, and sum them up
+    // if all elements are numbers, filter the odd numbers, cube them, and sum them up
     // otherwise, return undefined
     return nums ? arrNums.filter(e => e % 2).reduce((sum, e) => sum + (e * e * e), 0) : undefined;
 }
+
+console.log(sumOfCubedOddNums([1, 2, 3, 4]), 28);
+console.log(sumOfCubedOddNums([-5, -5, 5, 5]), 0);
+console.log(sumOfCubedOddNums(['a', 2, 3, 4]), undefined);
