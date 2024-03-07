@@ -21,5 +21,10 @@
 
 // create a function that takes in an array of numbers arrNums and a mixed array of numbers arrNumsMix derived from arrNums
 function findDeletedNum(arrNums, arrNumsMix) {
-
+    // calculate the sum of elements in the original array
+    let arrSum = arrNums.reduce((acc, c) => acc + c, 0);
+    // calculate the sum of elements in the mixed array
+    let arrSumMix = arrNumsMix.reduce((acc, c) => acc + c, 0);
+    // return the difference between the two sums, indicating the missing number
+    return arrSum - arrSumMix;
 }
