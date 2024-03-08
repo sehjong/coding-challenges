@@ -28,3 +28,7 @@ function findDeletedNum(arrNums, arrNumsMix) {
     // return the difference between the two sums, indicating the missing number
     return arrSum - arrSumMix;
 }
+
+console.log(findDeletedNum([1, 2, 3, 4, 5, 6, 7, 8, 9], [3, 2, 4, 6, 7, 8, 1, 9]), 5);
+console.log(findDeletedNum([1, 2, 3, 4, 5, 6, 7, 8, 9], [3, 2, 4, 6, 7, 8, 1, 9, 5]), 0);
+console.log(findDeletedNum([], []), 0);
