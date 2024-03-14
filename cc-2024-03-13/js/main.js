@@ -28,3 +28,11 @@
 // if no such element exists (meaning all elements are smaller or equal), indexOf returns -1,
 // indicating the absence of a larger element
 const leastLarger = (arr, i) => arr.indexOf(Math.min(...arr.filter(e => e > arr[i])));
+
+console.log(leastLarger([4, 1, 3, 5, 6], 0), 3);
+console.log(leastLarger([4, 1, 3, 5, 6], 4), -1);
+console.log(leastLarger([1, 3, 5, 2, 4], 0), 3);
+console.log(leastLarger([1, 2, 3, 4, 5, 0], 5), 0);
+console.log(leastLarger([1, 2, 3, 4, 5, 0], 0), 1);
+console.log(leastLarger([0], 0), -1);
+console.log(leastLarger([0, 0], 1), -1);
