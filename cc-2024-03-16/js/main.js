@@ -8,6 +8,5 @@
 // P:
 
 // create a function expression that takes in an array of strings
-const arrSort = strArr => {
-
-}
+// use the .sort() method to sort the array in lexicographical order and implicitly return the sorted array
+const arrSort = strArr => strArr.sort();
