@@ -10,3 +10,5 @@
 // create a function expression that takes in an array of strings
 // use the .sort() method to sort the array in lexicographical order and implicitly return the sorted array
 const arrSort = strArr => strArr.sort();
+
+console.log(arrSort(['one', 'two', 'three']), ['one', 'three', 'two']);
