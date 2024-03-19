@@ -29,3 +29,5 @@ function findDuplicateInteger(arrNums) {
 
     // if no duplicate is found by the end of the loop, implicitly return undefined
 }
+
+console.log(findDuplicateInteger([3, 2, 5, 1, 3, 4]), 3);
