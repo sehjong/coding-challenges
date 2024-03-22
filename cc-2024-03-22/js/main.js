@@ -33,3 +33,5 @@ function digits(num) {
     // return the array of sums
     return result;
 }
+
+console.log(digits(12345), [3, 4, 5, 6, 5, 6, 7, 7, 8, 9]);
