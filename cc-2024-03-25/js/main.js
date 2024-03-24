@@ -27,5 +27,7 @@
 
 // create a function that takes in a string of lowercase letters
 function solve(str) {
-    
+    // convert the string into an array, sort it, join back into a string,
+    // and check if it forms a consecutive sequence in the alphabet
+    return 'abcdefghijklmnopqrstuvwxyz'.includes([...str].sort().join(''));
 }
