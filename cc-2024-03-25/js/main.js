@@ -31,3 +31,9 @@ function solve(str) {
     // and check if it forms a consecutive sequence in the alphabet
     return 'abcdefghijklmnopqrstuvwxyz'.includes([...str].sort().join(''));
 }
+
+console.log(solve('abc'), true);
+console.log(solve('abd'), false);
+console.log(solve('dabc'), true);
+console.log(solve('abbc'), false);
+console.log(solve('v'), true);
