@@ -20,5 +20,15 @@
 
 // create a function that takes in a positive integer a and a positive integer b
 function solve(a, b) {
+    // base case: if either a or b is 0, return the current values of a and b
+    if (!a || !b) return [a, b];
 
+    // if a is at least twice b, reduce a by twice b and recurse
+    if (a >= 2 * b) return solve(a - 2 * b, b);
+
+    // if b is at least twice a, reduce b by twice a and recurse
+    if (b >= 2 * a) return solve(a, b - 2 * a);
+
+    // if neither condition applies, return the current values of a and b
+    return [a, b];
 }
