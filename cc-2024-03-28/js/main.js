@@ -32,3 +32,9 @@ function solve(a, b) {
     // if neither condition applies, return the current values of a and b
     return [a, b];
 }
+
+console.log(solve(6, 19), [6, 7]);
+console.log(solve(2, 1), [0, 1]);
+console.log(solve(2, 10), [2, 2]);
+console.log(solve(8796203, 7556), [1019, 1442]);
+console.log(solve(7, 11), [7, 11]);
