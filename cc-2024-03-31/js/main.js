@@ -16,7 +16,8 @@
 //    console.log(isNegativeZero(5), false);
 // P:
 
-// create a function expression that takes in a number
-const isNegativeZero = (num) => {
-
-}
+// create a function expression that takes in a number,
+// use the Object.is method to compare num with -0,
+// Object.is provides an accurate way to compare values,
+// ensuring -0 is distinguished from +0 and other numbers
+const isNegativeZero = (num) => Object.is(num, -0);
