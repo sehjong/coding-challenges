@@ -21,3 +21,8 @@
 // Object.is provides an accurate way to compare values,
 // ensuring -0 is distinguished from +0 and other numbers
 const isNegativeZero = (num) => Object.is(num, -0);
+
+console.log(isNegativeZero(-5), false);
+console.log(isNegativeZero(0), false);
+console.log(isNegativeZero(-0), true);
+console.log(isNegativeZero(5), false);
