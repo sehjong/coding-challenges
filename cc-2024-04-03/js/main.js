@@ -29,5 +29,6 @@
 
 // create a function that takes in integer values a, b, and c
 function isTriangle(a, b, c) {
-    
+    // check if the sum of any two sides is greater than the third side
+    return a + b > c && a + c > b && c + b > a;
 }
