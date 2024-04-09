@@ -15,5 +15,15 @@
 
 // create a function expression that takes in an array
 const reverse = arr => {
+    // initialize a new array to hold the reversed elements
+    let newArr = [];
 
+    // iterate over the input array from the last element to the first
+    for (let i = arr.length - 1; i >= 0; i--) {
+        // add the current element to the new array
+        newArr.push(arr[i]);
+    }
+
+    // return the newly formed array with elements in reversed order
+    return newArr;
 }
