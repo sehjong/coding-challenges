@@ -27,3 +27,7 @@ const reverse = arr => {
     // return the newly formed array with elements in reversed order
     return newArr;
 }
+
+console.log(reverse([1, 2, 3, 4]), [4, 3, 2, 1]);
+console.log(reverse(['a', 'b', 'c']), ['c', 'b', 'a']);
+console.log(reverse([1, 'a', 2, 'b', 3, 'c']), ['c', 3, 'b', 2, 'a', 1]);
