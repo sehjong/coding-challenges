@@ -23,5 +23,9 @@
 // create a function that takes in an initial number whose divisibility is to be tested,
 // and one or more numbers to check as potential divisors
 function isDivisible(firstNum, ...otherNums) {
+    // if there are no other numbers to check divisibility, return true
+    if (otherNums.length === 0) return true;
 
+    // check if firstNum is divisible by every number in otherNums and return the result
+    return otherNums.every(e => firstNum % e === 0);
 }
