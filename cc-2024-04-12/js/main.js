@@ -29,3 +29,9 @@ function isDivisible(firstNum, ...otherNums) {
     // check if firstNum is divisible by every number in otherNums and return the result
     return otherNums.every(e => firstNum % e === 0);
 }
+
+console.log(isDivisible(6, 1, 3), true);
+console.log(isDivisible(12, 2), true);
+console.log(isDivisible(100, 5, 4, 10, 25, 20), true);
+console.log(isDivisible(12, 7), false);
+console.log(isDivisible(12), true);
