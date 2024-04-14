@@ -27,5 +27,6 @@
 
 // create a function that takes in an array of numbers
 function copyArray(array) {
-
+    // use the .slice() method to create a new array that is a shallow copy of the original array
+    return array.slice();
 }
