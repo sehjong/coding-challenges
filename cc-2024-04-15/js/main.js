@@ -30,3 +30,13 @@ function copyArray(array) {
     // use the .slice() method to create a new array that is a shallow copy of the original array
     return array.slice();
 }
+
+let originalArray = [1, 2, 3, 4];
+let copiedArray = copyArray(originalArray);
+
+console.log(originalArray); // output should be: [1, 2, 3, 4]
+console.log(copiedArray);   // output should be: [1, 2, 3, 4]
+
+originalArray[1] += 5;
+console.log(originalArray); // output should be: [1, 7, 3, 4]
+console.log(copiedArray);   // output should still be: [1, 2, 3, 4]
