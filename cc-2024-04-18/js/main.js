@@ -34,3 +34,7 @@ function solve(str) {
 
     return maxNum;
 }
+
+console.log(solve('gh12cdy695m1'), 695);
+console.log(solve('2ti9iei7qhr5'), 9);
+console.log(solve('ghcdymtiieiqhr'), 0);
