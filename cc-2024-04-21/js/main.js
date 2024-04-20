@@ -21,5 +21,15 @@
 // create a function that takes in an array of strings, where each string is a word composed of alphabet letters,
 // both uppercase and lowercase letters may be included
 function solve(arr) {
-    
+    // define the alphabet for reference
+    let abc = 'abcdefghijklmnopqrstuvwxyz'
+
+    // map over the array of words to transform each word,
+    // convert each word to lowercase and split it into characters,
+    // filter characters that are in the position they would be in the alphabet,
+    // check if the index of the character in the word is the same as,
+    // its index in the alphabet (using indexOf on the alphabet string),
+    // return the length of the resulting array from filter, which is the count of,
+    // characters that are in their correct alphabetical position
+    return arr.map(x => x.toLowerCase().split('').filter((e, i) => i == abc.indexOf(e)).length);
 }
