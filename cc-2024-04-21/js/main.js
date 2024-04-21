@@ -33,3 +33,5 @@ function solve(arr) {
     // characters that are in their correct alphabetical position
     return arr.map(x => x.toLowerCase().split('').filter((e, i) => i == abc.indexOf(e)).length);
 }
+
+console.log(solve(['abode', 'ABc', 'xyzD']), [4, 3, 1]);
