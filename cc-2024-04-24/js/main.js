@@ -12,5 +12,22 @@
 
 // create a function that takes in an array of numbers, which may include duplicate values
 function sumUniqueNumbers(arrNums) {
+    // initialize an empty array to store unique numbers (elements)
+    let uniqueArrNums = [];
+    // initialize a variable to keep track of the sum of unique numbers
+    let totalSum = 0;
 
+    // iterate over each number in the input array
+    arrNums.forEach(currentNum => {
+        // check if the current number is unique in the array by comparing the first and last indices
+        if (arrNums.indexOf(currentNum) === arrNums.lastIndexOf(currentNum)) {
+            // if it's unique, add it to the uniqueArrNums array
+            uniqueArrNums.push(currentNum);
+            // add the unique number to the sum
+            totalSum += currentNum;
+        }
+    })
+
+    // return the total sum of unique numbers
+    return totalSum;
 }
