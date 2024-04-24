@@ -31,3 +31,7 @@ function sumUniqueNumbers(arrNums) {
     // return the total sum of unique numbers
     return totalSum;
 }
+
+console.log(sumUniqueNumbers([3, 4, 3, 6]), 10);
+console.log(sumUniqueNumbers([]), 0);
+console.log(sumUniqueNumbers([7, 2, 0, 3, 5, 7, 8, 3, 2, 10, 9, 5]), 27);
