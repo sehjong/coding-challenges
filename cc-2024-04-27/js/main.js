@@ -27,5 +27,30 @@
 
 // create a function expression that takes in an array containing exactly two strings
 const transposeTwoStrings = arrStr => {
+    // destructure the array to obtain the two words and convert them to arrays of characters
+    const [word1, word2] = arrStr.map(word => word.split(''));
+    // determine the length of the longer word
+    const longestLength = Math.max(word1.length, word2.length);
+    // initialize variables to hold the characters from each word for each iteration
+    let char1 = '';
+    let char2 = '';
+    // initialize the result string
+    let res = '';
 
+    // iterate over the length of the longer word
+    for (let i = 0; i < longestLength; i++) {
+        // use the current index to get the character from each word or default to a space if out of bounds
+        char1 = word1[i] ?? ' ';
+        char2 = word2[i] ?? ' ';
+
+        // append the transposed characters to the result string, add a newline except for the last pair
+        if (i === longestLength - 1) {
+            res += `${char1} ${char2}`;
+        } else {
+            res += `${char1} ${char2}\n`;
+        }
+    }
+
+    // return the final transposed string
+    return res;
 }
