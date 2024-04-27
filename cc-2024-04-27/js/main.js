@@ -54,3 +54,34 @@ const transposeTwoStrings = arrStr => {
     // return the final transposed string
     return res;
 }
+
+console.log("Result of transposing ['Hello', 'World']:\n" + transposeTwoStrings(['Hello', 'World']));
+// prints:
+// Result of transposing ['Hello', 'World']:
+// H W
+// e o
+// l r
+// l l
+// o d
+
+console.log("Result of transposing ['joey', 'louise']:\n" + transposeTwoStrings(['joey', 'louise']));
+// prints:
+// Result of transposing ['joey', 'louise']:
+// j l
+// o o
+// e u
+// y i
+//   s
+//   e
+
+console.log("Result of transposing ['quick', 'thinking']:\n" + transposeTwoStrings(['quick', 'thinking']));
+// prints:
+// Result of transposing ['quick', 'thinking']:
+// q t
+// u h
+// i i
+// c n
+// k k
+//   i
+//   n
+//   g
