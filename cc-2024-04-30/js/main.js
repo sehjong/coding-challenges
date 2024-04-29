@@ -18,6 +18,14 @@
 // the average method accepts an arbitrary number of arguments, all integers
 let Calculator = {
     average: function() {
-
+        // convert arguments to an array and calculate the average,
+        // handle no arguments case by checking the length and returning 0 if no arguments,
+        // use Array.prototype.slice to convert the arguments object into an array,
+        // use the reduce method for arrays to calculate the sum of the array elements
+        return arguments.length === 0 ? 0 : Array.prototype.slice.call(arguments).reduce(function(acc, c) {
+            // sum the current element with the accumulator
+            return acc + c;
+        // divide the sum by the number of elements to find the average
+        }, 0) / arguments.length;
     }
 }
