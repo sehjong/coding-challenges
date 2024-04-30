@@ -29,3 +29,23 @@ let Calculator = {
         }, 0) / arguments.length;
     }
 }
+
+// the Calculator.average method with three arguments
+console.log("Average of 3, 4, 5:", Calculator.average(3, 4, 5));
+
+// the Calculator.average method with a larger set of numbers
+console.log("Average of 3, 4, 5, 6, 7, 8, 9, 8, 7, 6, 5, 4, 3:", Calculator.average(3, 4, 5, 6, 7, 8, 9, 8, 7, 6, 5, 4, 3));
+
+// the Calculator.average method with an example of random generated numbers
+let randomArgs = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100));
+console.log("Average of random numbers:", Calculator.average(...randomArgs));
+
+// the Calculator.average method with no arguments
+console.log("Average with no arguments:", Calculator.average());
+
+// refactored solution for clarity
+const Calculator = {
+    average: function(...args) {
+        return args.length === 0 ? 0 : args.reduce((acc, c) => acc + c, 0) / args.length;
+    }
+}
