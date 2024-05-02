@@ -25,6 +25,22 @@
 // P:
 
 // create a function that takes in two strings which may contain both lower and upper case letters
-function subStringTest(str1, str2) {
+function substringTest(str1, str2) {
+    // convert both strings to lowercase
+    str1 = str1.toLowerCase();
+    str2 = str2.toLowerCase();
 
+    // search for any common substring of length greater than one
+    for (let i = 0; i < str2.length - 1; i++) {
+        // extract a substring of length 2 from str2 starting at index i
+        let sub = str2.substr(i, 2);
+        // check if this substring is found in str1
+        if (str1.indexOf(sub) > -1) {
+            // common substring found
+            return true;
+        }
+    }
+
+    // no common substring found
+    return false;
 }
