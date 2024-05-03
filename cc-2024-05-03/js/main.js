@@ -44,3 +44,7 @@ function substringTest(str1, str2) {
     // no common substring found
     return false;
 }
+
+console.log(substringTest('Something', 'Fun'), false);
+console.log(substringTest('Something', 'Home'), true);
+console.log(substringTest('Something', ''), false);
