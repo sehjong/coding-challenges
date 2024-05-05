@@ -28,7 +28,8 @@
 //    Testing: [1, 0, 1, 1] ==> 11
 // P:
 
-// create a function expression that takes in an array of the numbers 0 and 1 of varying length
-const parseBinary = arrNums => {
-
-}
+// create a function expression that takes in an array of the numbers 0 and 1 of varying length,
+// join the array elements into a single string of binary digits,
+// convert the binary string to a decimal number using parseInt,
+// where 2 specifies the base (binary) for conversion
+const parseBinary = arrNums => parseInt(arrNums.join(''), 2);
