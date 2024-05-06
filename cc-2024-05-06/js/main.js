@@ -33,3 +33,15 @@
 // convert the binary string to a decimal number using parseInt,
 // where 2 specifies the base (binary) for conversion
 const parseBinary = arrNums => parseInt(arrNums.join(''), 2);
+
+console.log(parseBinary([0, 0, 0, 1]), 1);
+console.log(parseBinary([0, 0, 1, 0]), 2);
+console.log(parseBinary([0, 1, 0, 1]), 5);
+console.log(parseBinary([1, 0, 0, 1]), 9);
+console.log(parseBinary([0, 0, 1, 0]), 2);
+console.log(parseBinary([0, 1, 1, 0]), 6);
+console.log(parseBinary([1, 1, 1, 1]), 15);
+console.log(parseBinary([1, 0, 1, 1]), 11);
+console.log(parseBinary([1, 1, 1, 1, 1, 1, 1, 1]), 255);
+console.log(parseBinary([0, 0, 0, 0, 0, 0, 0, 0]), 0);
+console.log(parseBinary([1, 0, 1, 1, 0, 1, 0]), 90);
