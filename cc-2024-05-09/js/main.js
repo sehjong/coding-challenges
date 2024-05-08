@@ -17,5 +17,7 @@
 
 // create a function that takes in an array of numbers
 function repeats(arrNums) {
-
+    // filter array to find elements that occur exactly once,
+    // sum the elements that occur exactly once
+    return arrNums.filter(e => arrNums.indexOf(e) === arrNums.lastIndexOf(e)).reduce((acc, c) => acc + c, 0);
 }
