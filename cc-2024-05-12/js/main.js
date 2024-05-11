@@ -18,7 +18,8 @@
 //    14.3286 is 14.32
 // P:
 
-// create a function expression that takes in a floated number
-const twoDecimalPlaces = num => {
-    
-}
+// create a function expression that takes in a floated number,
+// multiply the number by 100 to shift the decimal two places to the right,
+// use Math.trunc to drop any digits beyond the decimal point,
+// divide by 100 to shift the decimal back two places to the left
+const twoDecimalPlaces = num => Math.trunc(num * 100) / 100;
