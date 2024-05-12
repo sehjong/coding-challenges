@@ -23,3 +23,7 @@
 // use Math.trunc to drop any digits beyond the decimal point,
 // divide by 100 to shift the decimal back two places to the left
 const twoDecimalPlaces = num => Math.trunc(num * 100) / 100;
+
+console.log(twoDecimalPlaces(32.8493), 32.84);
+console.log(twoDecimalPlaces(14.3286), 14.32);
+console.log(twoDecimalPlaces(4.6537), 4.65);
