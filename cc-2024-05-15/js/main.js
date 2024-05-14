@@ -14,7 +14,8 @@
 //    console.log(evensAndOdds(0), 0);
 // P:
 
-// create a function expression that takes in a whole number
-const evensAndOdds = num => {
-
-}
+// create a function expression that takes in a whole number,
+// convert the number to a string representation,
+// use base 16 for hexadecimal if the number is odd, num % 2 is non-zero,
+// use base 2 for binary if the number is even, num % 2 is zero
+const evensAndOdds = num => num.toString(num % 2 ? 16 : 2);
