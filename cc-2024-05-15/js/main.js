@@ -19,3 +19,7 @@
 // use base 16 for hexadecimal if the number is odd, num % 2 is non-zero,
 // use base 2 for binary if the number is even, num % 2 is zero
 const evensAndOdds = num => num.toString(num % 2 ? 16 : 2);
+
+console.log(evensAndOdds(2), 10);
+console.log(evensAndOdds(13), 'd');
+console.log(evensAndOdds(0), 0);
