@@ -13,5 +13,8 @@
 
 // create a function that takes in an array of integers
 function getMinMax(arrNums) {
-    
+    // use the spread operator to pass array elements to Math.min and Math.max,
+    // return an array with the minimum value as the first element,
+    // and the maximum value as the second element
+    return [Math.min(...arrNums), Math.max(...arrNums)];
 }
