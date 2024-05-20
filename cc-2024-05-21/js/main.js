@@ -22,7 +22,6 @@
 
 // create a function expression that takes in an array of whole number pairs,
 // where each pair represents the number of people getting on the bus, the first element,
-// and the number of people getting off the bus, the second element, at each bus stop
-const num = stops => {
-    
-}
+// and the number of people getting off the bus, the second element, at each bus stop,
+// use the reduce method to calculate the number of people remaining on the bus
+const num = stops => stops.reduce((acc, c) => acc + c[0] - c[1], 0);
