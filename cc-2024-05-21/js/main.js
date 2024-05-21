@@ -25,3 +25,7 @@
 // and the number of people getting off the bus, the second element, at each bus stop,
 // use the reduce method to calculate the number of people remaining on the bus
 const num = stops => stops.reduce((acc, c) => acc + c[0] - c[1], 0);
+
+console.log(num([[10, 0], [3, 5], [5, 8]]), 5);
+console.log(num([[3, 0], [9, 1], [4, 8], [12, 2], [6, 1], [7, 8]]), 21);
+console.log(num([[0, 0]]), 0);
