@@ -20,11 +20,14 @@
 //    the original array remains unchanged,
 //    return an empty array if the input is empty
 // E: * Input: [1,2,3,4,5], output = [2,3,4,5]
-// * Input: [5,3,2,1,4], output = [5,3,2,4]
-// * Input: [2,2,1,2,1], output = [2,2,2,1]
+//    * Input: [5,3,2,1,4], output = [5,3,2,4]
+//    * Input: [2,2,1,2,1], output = [2,2,2,1]
 // P:
 
 // create a function that takes in an array of integers
 function removeMinimum(nums) {
-    
+    // find the index of the smallest number in the array
+    let indexOfMin = nums.indexOf(Math.min(...nums));
+    // return a new array without the smallest number
+    return [...nums.slice(0, indexOfMin), ...nums.slice(indexOfMin + 1)];
 }
