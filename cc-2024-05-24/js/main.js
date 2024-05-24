@@ -31,3 +31,7 @@ function removeMinimum(nums) {
     // return a new array without the smallest number
     return [...nums.slice(0, indexOfMin), ...nums.slice(indexOfMin + 1)];
 }
+
+console.log(removeMinimum([1, 2, 3, 4, 5]), [2, 3, 4, 5]);
+console.log(removeMinimum([5, 3, 2, 1, 4]), [5, 3, 2, 4]);
+console.log(removeMinimum([2, 2, 1, 2, 1]), [2, 2, 2, 1]);
