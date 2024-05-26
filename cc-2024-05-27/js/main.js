@@ -15,5 +15,11 @@
 
 // create a function that takes in a number
 function reverseBinary(num) {
-
+    // convert the number to its binary representation,
+    // split the binary string into an array of characters,
+    // reverse the array of characters,
+    // join the reversed array back into a string
+    const binaryReverse = num.toString(2).split('').reverse().join('');
+    // convert the reversed binary string back to a number and return it
+    return parseInt(binaryReverse, 2);
 }
