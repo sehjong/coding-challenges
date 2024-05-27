@@ -23,3 +23,7 @@ function reverseBinary(num) {
     // convert the reversed binary string back to a number and return it
     return parseInt(binaryReverse, 2);
 }
+
+console.log(reverseBinary(417), 267);
+console.log(reverseBinary(267), 417);
+console.log(reverseBinary(0), 0);
