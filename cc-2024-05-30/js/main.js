@@ -20,5 +20,10 @@
 
 // create a function that takes in two strings a and b
 function shorterReverseLonger(a, b) {
-
+    // check lengths and determine shorter and longer strings
+    if (a.length >= b.length) {
+        return b + a.split('').reverse().join('') + b;
+    } else {
+        return a + b.split('').reverse().join('') + a;
+    }
 }
