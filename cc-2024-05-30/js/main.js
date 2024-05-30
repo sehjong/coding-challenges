@@ -27,3 +27,10 @@ function shorterReverseLonger(a, b) {
         return a + b.split('').reverse().join('') + a;
     }
 }
+
+console.log(shorterReverseLonger('sun', 'moon'), 'sunnoomsun');
+console.log(shorterReverseLonger('moon', 'sun'), 'sunnoomsun');
+console.log(shorterReverseLonger('hello', 'world'), 'worldollehworld');   
+console.log(shorterReverseLonger('sky', ''), 'yks');
+console.log(shorterReverseLonger('', 'earth'), 'htrae');
+console.log(shorterReverseLonger('', ''), );
