@@ -18,12 +18,29 @@
 //    'Fizz' for multiples of 3,
 //    'Buzz' for multiples of 5,
 //    'FizzBuzz' for multiples of both 3 and 5
-// E: console.log(fizzbuzz(3), [1, 2, 'Fizz']);
-//    console.log(fizzbuzz(10), [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz']);
-//    console.log(fizzbuzz(20), [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16, 17, 'Fizz', 19, 'Buzz']);
+// E: console.log(fizzBuzz(3), [1, 2, 'Fizz']);
+//    console.log(fizzBuzz(10), [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz']);
+//    console.log(fizzBuzz(20), [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16, 17, 'Fizz', 19, 'Buzz']);
 // P:
 
 // create a functon that takes in a number
-function fizzBuzz(num) {
-    
+function fizzBuzz(num) { 
+    const result = [];
+
+    for (let i = 1; i <= num; i++) {
+        // this condition must be checked first to ensure 'FizzBuzz' is evaluated,
+        // since separate if statements are evaluated separately,
+        // and else if statements are evaluated until the first true condition and stops
+        if (i % 3 === 0 && i % 5 === 0) {
+            result.push('FizzBuzz');
+        } else if (i % 3 === 0) {
+            result.push('Fizz');
+        } else if (i % 5 === 0) {
+            result.push('Buzz');
+        } else {
+            result.push(i);
+        }
+    }
+
+    return result;
 }
