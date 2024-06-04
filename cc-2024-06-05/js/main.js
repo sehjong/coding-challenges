@@ -20,5 +20,16 @@
 
 // create a function that takes in an array of integers
 function pairs(arrNums) {
-    
+    let count = 0;
+
+    // iterate through the array with a step of 2 to check each pair
+    for (let i = 0; i < arrNums.length - 1; i += 2) {
+        // check if the absolute difference between the current element and the next element is 1
+        if (Math.abs(arrNums[i] - arrNums[i + 1]) === 1) {
+            // if true, increment the count
+            count += 1;
+        }
+    }
+
+    return count;
 }
