@@ -33,3 +33,7 @@ function pairs(arrNums) {
 
     return count;
 }
+
+console.log(pairs([1, 2, 5, 8, -4, -3, 7, 6, 5]), 3);
+console.log(pairs([21, 20, 22, 40, 39, -56, 30, -55, 95, 94]), 2);
+console.log(pairs([81, 44, 80, 26, 12, 27, -34, 37, -35]), 0);
