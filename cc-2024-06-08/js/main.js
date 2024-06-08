@@ -31,3 +31,6 @@
 // and another array of strings a2 where each string starts with a unique letter,
 // map elements in a1 to matching elements in a2 based on the first letter
 const sortArr = (a1, a2) => a1.map(e1 => a2.find(e2 => e1[0] === e2[0]));
+
+console.log(sortArr(['giraffe', 'orangutan', 'impala', 'elephant', 'rhino'], ['rattlesnake', 'eagle', 'geko', 'iguana', 'octopus']), ['geko', 'octopus', 'iguana', 'eagle', 'rattlesnake']);
+console.log(sortArr(['jellyfish', 'koi', 'caribou', 'owl', 'dolphin'], ['ostrich', 'jaguar', 'deer', 'camel', 'kangaroo']), ['jaguar', 'kangaroo', 'camel', 'ostrich', 'deer']);
