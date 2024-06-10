@@ -34,5 +34,15 @@ console.log(listToArray(lists[2]), [true, false, 'true', 'false']);
 //  and a reference next to the next node,
 //  or null if it's the last node
 function listToArray(list) {
-    
+    // initialize an empty array to store the values
+    const array = [];
+
+    // iterate through each node in the linked list
+    for (let node = list; node; node = node.next) {
+        // add the value of the current node to the array
+        array.push(node.value);
+    }
+
+    // return the array containing all the values from the linked list
+    return array;
 }
