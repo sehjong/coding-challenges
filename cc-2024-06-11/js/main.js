@@ -46,3 +46,13 @@ function listToArray(list) {
     // return the array containing all the values from the linked list
     return array;
 }
+
+let lists = [
+    {value: 1, next: {value: 2, next: {value: 3, next: null}}},
+    {value: 'string', next: null},
+    {value: true, next: {value: false, next: {value: 'true', next: {value: 'false', next: null}}}}
+]
+
+console.log(listToArray(lists[0]), [1, 2, 3]);
+console.log(listToArray(lists[1]), ['string']);
+console.log(listToArray(lists[2]), [true, false, 'true', 'false']);
