@@ -19,5 +19,23 @@ Note: If the number is a multiple of both 3 and 5, only count it once.
 
 // create a function that takes in a number
 function solution(num) {
+    // if the input number is less than or equal to 0, return 0
+    if (num <= 0) {
+        return 0;
+    }
 
+    // initialize the sum of multiples to 0
+    let sum = 0;
+
+    // loop through all numbers from 0 up to but not including the given number
+    for (let i = 0; i < num; i++) {
+        // check if the current number is a multiple of 3 or 5
+        if (i % 3 === 0 || i % 5 === 0) {
+            // add the current number to the sum
+            sum += i;
+        }
+    }
+
+    // return the sum of multiples
+    return sum;
 }
