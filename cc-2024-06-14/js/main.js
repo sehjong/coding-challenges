@@ -39,3 +39,7 @@ function solution(num) {
     // return the sum of multiples
     return sum;
 }
+
+console.log(solution(10), 23);
+console.log(solution(20), 78);
+console.log(solution(0), 0);
