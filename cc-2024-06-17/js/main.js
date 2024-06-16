@@ -24,5 +24,17 @@ Examples
 
 // create a function that takes in an array of numbers
 function findOdd(arr) {
+    const count = {};
 
+    // count occurrences of each number
+    arr.forEach(num => {
+        count[num] = (count[num] || 0) + 1;
+    })
+
+    // find and return the number that occurs an odd number of times
+    for (let num in count){
+        if (count[num] % 2 !== 0) {
+            return parseInt(num);
+        }
+    }
 }
