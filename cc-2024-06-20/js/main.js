@@ -22,5 +22,7 @@ arrayDiff([1,2,2,2,3],[2]) == [1,3]
 // create a function that takes in an array of numbers from which elements will be removed,
 // and another array of numbers specifying the elements to be removed from the initial array
 function arrayDiff(a, b) {
-    
+    // use the filter method to create a new array with elements from a,
+    // that are not present in b
+    return a.filter(e => !b.includes(e));
 }
