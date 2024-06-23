@@ -29,3 +29,7 @@ function count(str) {
     // return the object containing character counts
     return count;
 }
+
+console.log(count(''), {});
+console.log(count('ab'), {'a': 1, 'b': 1});
+console.log(count('aba'), {'a': 2, 'b': 1});
