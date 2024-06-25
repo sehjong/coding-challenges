@@ -28,5 +28,15 @@ Example
 
 // create a function that takes in a string
 function duplicateCount(str) {
-
+    // convert the input string to lowercase to ensure case insensitivity,
+    // split the string into an array of characters,
+    // filter the array to keep only characters that occur more than once
+    return str.toLowerCase().split('').filter(function(e, i, a) {
+        // check if the current character's first occurrence index is different from its current index,
+        // this ensures that only characters that have been seen before are considered,
+        // check if the current character's last occurrence index is the same as its current index,
+        // this ensures that each character is counted only once, even if it occurs multiple times
+        return a.indexOf(e) !== i && a.lastIndexOf(e) === i;
+    // get the length of the filtered array, which is the count of characters that occur more than once    
+    }).length;
 }
