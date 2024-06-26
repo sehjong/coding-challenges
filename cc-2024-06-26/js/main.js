@@ -40,3 +40,11 @@ function duplicateCount(str) {
     // get the length of the filtered array, which is the count of characters that occur more than once    
     }).length;
 }
+
+console.log(duplicateCount('abcde'), 0);
+console.log(duplicateCount('aabbcde'), 2);
+console.log(duplicateCount('aabBcde'), 2);
+console.log(duplicateCount('indivisibility'), 1);
+console.log(duplicateCount('Indivisibilities'), 2);
+console.log(duplicateCount('aA11'), 2);
+console.log(duplicateCount('ABBA'), 2);
