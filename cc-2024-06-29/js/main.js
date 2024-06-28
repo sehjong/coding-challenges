@@ -20,5 +20,8 @@ Examples
 
 // create a function that takes in an array of numbers
 function sortArray(array) {
-
+    // filter the array to get all odd numbers
+    const odd = array.filter((e) => e % 2).sort((a, b) => a - b);
+    // map the original array, replacing odd numbers with sorted ones
+    return array.map((e) => e % 2 ? odd.shift() : e);
 }
