@@ -25,5 +25,30 @@ All letters will be lowercase and all inputs will be valid.
 
 // create a function that takes in a string of words
 function highestScoringWord(str) {
+    // helper function to calculate the score of a word
+    function calculateWordScore(word) {
+        const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        let score = 0;
+        for (let char of word) {
+            score += alphabet.indexOf(char) + 1;
+        }
+        return score;
+    }
 
+    // split the input string into an array of words
+    const words = str.split(' ');
+
+    // map each word to its score
+    const scores = words.map(calculateWordScore);
+
+    // find the index of the word with the highest score
+    let highestScoreIndex = 0;
+    for (let i = 1; i < scores.length; i++) {
+        if (scores[i] > scores[highestScoreIndex]) {
+            highestScoreIndex = i;
+        }
+    }
+
+    // return the word with the highest score
+    return words[highestScoreIndex];
 }
