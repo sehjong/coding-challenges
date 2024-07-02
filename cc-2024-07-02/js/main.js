@@ -41,6 +41,9 @@ function highestScoringWord(str) {
     // map each word to its score
     const scores = words.map(calculateWordScore);
 
+    // console log the words and their corresponding scores for debugging purposes
+    console.log('Words and their scores:', words, scores);
+
     // find the index of the word with the highest score
     let highestScoreIndex = 0;
     for (let i = 1; i < scores.length; i++) {
@@ -52,3 +55,7 @@ function highestScoringWord(str) {
     // return the word with the highest score
     return words[highestScoreIndex];
 }
+
+console.log(highestScoringWord('abc cba'), 'abc');
+console.log(highestScoringWord('test', 'case'), 'test');
+console.log(highestScoringWord('this is a test sentence with words of varying scores'), 'varying');
