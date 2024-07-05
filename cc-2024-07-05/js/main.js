@@ -47,3 +47,7 @@ function findMissingArray(nestedArrays) {
     // return 0 if no missing length is found, though the problem guarantees there will be one
     return 0;
 }
+
+console.log(findMissingArray([[1, 2], [4, 5, 1, 1], [1], [5, 6, 7, 8, 9]]), 3);
+console.log(findMissingArray([]), 0);
+console.log(findMissingArray(null), 0);
