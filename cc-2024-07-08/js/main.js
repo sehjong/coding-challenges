@@ -49,3 +49,7 @@ function mostFrequentNum(arrNums) {
     // return the most frequent element as a number
     return parseInt(key);
 }
+
+console.log(mostFrequentNum([12, 10, 8, 12, 7, 6, 4, 10, 12]), 12);
+console.log(mostFrequentNum([12, 10, 8, 12, 7, 6, 4, 10, 12, 10]), 12);
+console.log(mostFrequentNum([12, 10, 8, 8, 3, 3, 3, 3, 2, 4, 10, 12, 10]), 3);
