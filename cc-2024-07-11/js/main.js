@@ -13,5 +13,14 @@ Reverse every other word in a given string, then return the string. Throw away a
 
 // create a function that takes in a string of words
 function reverse(str) {
+    // split the input string into an array of words
+    let arr = str.split(' ');
 
+    // iterate over the array, reversing every other word
+    for (let i = 1; i < arr.length; i += 2) {
+        arr[i] = arr[i].split('').reverse().join('');
+    }
+
+    // join the array back into a string with single spaces between words and return the result
+    return arr.join(' ').trim();
 }
