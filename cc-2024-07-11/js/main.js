@@ -24,3 +24,7 @@ function reverse(str) {
     // join the array back into a string with single spaces between words and return the result
     return arr.join(' ').trim();
 }
+
+console.log(reverse('Did it work?'), 'Did ti work?');
+console.log(reverse('I really hope it works this time...'), 'I yllaer hope ti works siht time...');
+console.log(reverse('Reverse this string, please!'), 'Reverse siht string, !esaelp');
