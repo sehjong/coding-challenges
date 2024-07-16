@@ -35,12 +35,32 @@ If you are given an array with multiple answers, return the lowest correct index
 // P: an array of integers
 // R: the lowest index N where the sum of the integers to the left of N is equal to the sum of the integers to the right of N,
 //    if no such index exists, return -1
-// E: [1, 2, 3, 4, 3, 2, 1] -> 6
+// E: [1, 2, 3, 4, 3, 2, 1] -> 3
 //    [1, 100, 50, -51, 1 ,1] -> 1
 //    [20, 10, -80, 10, 10, 15, 35] -> 0
 // P:
 
-// create a funciton that take in an array of integers
+// create a funciton that takes in an array of integers
 function findEvenIndex(arr) {
-    
+    // initialize left sum to 0
+    let leftSum = 0;
+    // initialize right sum to the sum of all elements in arr
+    let rightSum = arr.reduce((total, num) => total + num, 0);
+
+    // iterate over each element in arr
+    for (let i = 0; i < arr.length; i++) {
+        // update left sum by adding the previous element
+        if (i > 0) leftSum += arr[i - 1];
+        // subtract the current element from right sum
+        rightSum -= arr[i];
+
+        // check if left sum equals right sum
+        if (leftSum === rightSum) {
+            // return the current index if they are equal
+            return i;
+        }
+    }
+
+    // return -1 if no such index is found
+    return -1;
 }
