@@ -24,5 +24,14 @@ Examples
 
 // create a function that takes in a 4 digit string representing a year
 function whatCentury(year) {
-    
+    // calculate the century by dividing the year by 100 and rounding up
+    let century = Math.ceil(year / 100);
+
+    // determine the appropriate ordinal suffix for the century
+    let suffix = (century % 10 === 1 && century !== 11) ? 'st' :
+                 (century % 10 === 2 && century !== 12) ? 'nd' :
+                 (century % 10 === 3 && century !== 13) ? 'rd' : 'th';
+
+    // return the century concatenated with its ordinal suffix
+    return century + suffix;
 }
