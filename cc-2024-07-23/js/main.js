@@ -35,5 +35,13 @@ For the sake of simplicity, all function inputs to createIterator would be funct
 
 // create a function expression that takes a function and the number of times to iterate the function
 let createIterator = function(func, n) {
-
+    // return a new function that takes an initial value
+    return function(val) {
+        // loop n times, applying func to val on each iteration
+        for (let i = 0; i < n; i++) {
+            val = func(val);
+        }
+        // return the final value
+        return val;
+    }
 }
