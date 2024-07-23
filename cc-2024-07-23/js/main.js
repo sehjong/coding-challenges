@@ -19,15 +19,12 @@ For the sake of simplicity, all function inputs to createIterator would be funct
 // R: a new function that, when called with an argument,
 //    repeatedly applies the provided function to the argument the specified number of times
 // E: from the coding challenge description:
-//
 //    const getDouble = (n) => n * 2;
-//
 //    const doubleIterator = createIterator(getDouble, 2);
 //    console.log(doubleIterator(3), 12);
 //
 //    to verify that the createIterator function works correctly for different functions,
 //    not just the one provided in the original example:
-//
 //    const increment = (n) => n + 1;
 //    const incrementIterator = createIterator(increment, 3);
 //    console.log(incrementIterator(5), 8);
@@ -45,3 +42,14 @@ let createIterator = function(func, n) {
         return val;
     }
 }
+
+// from the coding challenge description:
+const getDouble = (n) => n * 2;
+const doubleIterator = createIterator(getDouble, 2);
+console.log(doubleIterator(3), 12);
+
+// to verify that the createIterator function works correctly for different functions,
+// not just the one provided in the original example:
+const increment = (n) => n + 1;
+const incrementIterator = createIterator(increment, 3);
+console.log(incrementIterator(5), 8);
