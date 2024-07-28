@@ -21,5 +21,18 @@ Example:
 
 // create a function that takes in an array of letters
 function missingLetter(arr) {
-    
+    // get the ASCII code of the first letter in the array
+    let firstLetter = arr[0].charCodeAt(0);
+
+    // loop through the array starting from the second element
+    for (let i = 1; i < arr.length; i++) {
+        // check if the ASCII code of the current letter is equal to first + i
+        if (firstLetter + i !== arr[i].charCodeAt(0)) {
+            // if not, return the letter corresponding to first + i
+            return String.fromCharCode(firstLetter + i);
+        }
+    }
+
+    // throw an error if no missing letter is found, which should not happen with a valid input
+    throw new Error("Invalid input");
 }
