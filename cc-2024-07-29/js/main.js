@@ -36,3 +36,6 @@ function missingLetter(arr) {
     // throw an error if no missing letter is found, which should not happen with a valid input
     throw new Error("Invalid input");
 }
+
+console.log(missingLetter(['a', 'b' ,'c' ,'d' ,'f']), 'e');
+console.log(missingLetter(['O', 'Q', 'R', 'S']), 'P');
