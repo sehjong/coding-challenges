@@ -32,6 +32,21 @@ if the number is 3,
 
 // create a function expression that takes in a number representing the size of a 2D matrix,
 // that is, the number of rows and columns of a 2D array of n * n
-let multiplicationTable(size) {
+let multiplicationTable = function(size) {
+    // initialize an empty array to store the result
+    let result = [];
 
+    // loop from 0 to size - 1 to create each row
+    for (let i = 0; i < size; i++) {
+        // initialize an empty array for the current row
+        result[i] = [];
+        // loop from 0 to size - 1 to create each element in the row
+        for (let j = 0; j < size; j++) {
+            // calculate the value and assign it to the current element
+            result[i][j] = (i + 1) * (j + 1);
+        }
+    }
+
+    // return the result array
+    return result;
 }
