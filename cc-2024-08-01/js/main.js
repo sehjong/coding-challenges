@@ -47,6 +47,8 @@ let multiplicationTable = function(size) {
         }
     }
 
-    // return the result array
+    // return the dynamically created 2D matrix with the multiplication results
     return result;
 }
+
+console.log(multiplicationTable(3), [[1, 2, 3], [2, 4, 6], [3, 6, 9]]);
