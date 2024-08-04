@@ -27,3 +27,7 @@ function isIntArray(arr) {
         return Math.floor(x) === x;
     })
 }
+
+console.log(isIntArray([1, 2, 3, 4]), true);
+console.log(isIntArray([]), true);
+console.log(isIntArray(['1']), false);
