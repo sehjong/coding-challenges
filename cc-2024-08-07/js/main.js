@@ -26,11 +26,25 @@ if n is larger than values's length, use the length instead.
 // create a function that takes in an array of integers, and a whole number,
 // to calculate the minimum sum of the smallest integers in an array
 function minimumSum(values, n) {
-
+    // sort the array in ascending order and pass it to the calculateSum function
+    return calculateSum(values.sort(ascendingOrder), n);
 }
 
 // create a function that takes in an array of integers, and a whole number,
 // to calculate the maximum sum of the largest integers in an array
 function maximumSum(values, n) {
-    
+    // sort the array in ascending order, reverse it for descending order,
+    // and pass it to the calculateSum function
+    return calculateSum(values.sort(ascendingOrder).reverse(), n);
+}
+
+// create a helper function to sum the first n integers of an array
+function calculateSum(values, n) {
+    // slice the array to get the first n elements, and then use reduce to sum them up
+    return values.slice(0, n).reduce((total, current) => total + current, 0);
+}
+
+// create a comparison function to sort integers in ascending order
+function ascendingOrder(a, b) {
+    return a - b;
 }
