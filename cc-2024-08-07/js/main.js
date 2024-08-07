@@ -48,3 +48,7 @@ function calculateSum(values, n) {
 function ascendingOrder(a, b) {
     return a - b;
 }
+
+let values = [5, 4, 3, 2, 1];
+console.log(minimumSum(values, 2), 3);
+console.log(maximumSum(values, 3), 12);
