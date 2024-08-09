@@ -21,5 +21,6 @@ Expected output:
 
 // create a function that takes in an array of numbers
 function findUnique(num) {
-
+    // reduce the array by applying XOR across all elements
+    return num.reduce((a, b) => a ^ b);
 }
