@@ -24,3 +24,5 @@ function findUnique(num) {
     // reduce the array by applying XOR across all elements
     return num.reduce((a, b) => a ^ b);
 }
+
+console.log(findUnique([1, 8, 4, 4, 6, 1, 8]), 6);
