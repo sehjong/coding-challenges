@@ -19,5 +19,23 @@ Good luck!
 
 // create a function that takes in an array of numbers
 function solve(arr) {
-    
+    // create a frequency map object to track occurrences of each number
+    let frequencyMap = {};
+
+    // iterate over each number in the array to populate the frequency map
+    for (let num of arr) {
+        frequencyMap[num] = (frequencyMap[num] || 0) + 1;
+    }
+
+    // sort the array
+    return arr.slice().sort((a, b) => {
+        // sort primarily by decreasing frequency
+        let frequencyDifference = frequencyMap[b] - frequencyMap[a];
+        if (frequencyDifference !== 0) {
+            return frequencyDifference;
+        }
+
+        // if frequencies are equal, sort by increasing value
+        return a - b;
+    })
 }
