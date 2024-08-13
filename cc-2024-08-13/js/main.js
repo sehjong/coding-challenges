@@ -39,3 +39,5 @@ function solve(arr) {
         return a - b;
     })
 }
+
+console.log(solve([2, 3, 5, 3, 7, 9, 5, 3, 7]), [3, 3, 3, 5, 5, 7, 7, 2, 9]);
