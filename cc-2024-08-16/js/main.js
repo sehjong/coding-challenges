@@ -23,3 +23,5 @@ function onlyDuplicates(str) {
     // then join the remaining characters back into a string
     return str.split('').filter(e => str.indexOf(e) != str.lastIndexOf(e)).join('');
 }
+
+console.log(onlyDuplicates('abccdefee'), 'cceee');
