@@ -18,5 +18,16 @@ An example should clarify:
 
 // create a function expresion that takes in a string
 const insideOut = (str) => {
-
+    // split the string into an array of words and map through each word
+    return str.split(' ').map(x => {
+        // calculate the left half of the word, reverse it, and join it back into a string
+        let left = x.substring(0, Math.floor(x.length / 2)).split('').reverse().join('');
+        // calculate the right half of the word, reverse it, and join it back into a string
+        let right = x.substring(Math.ceil(x.length / 2)).split('').reverse().join('');
+        // determine the middle character for words with an odd length
+        let middle = x[Math.floor(x.length / 2)];
+        // return the transformed word based on whether the word length is odd or even
+        return x.length % 2 ? left + middle + right : left + right;
+    // join the transformed words back into a single string
+    }).join(' ');
 }
