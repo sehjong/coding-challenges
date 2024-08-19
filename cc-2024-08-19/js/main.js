@@ -31,3 +31,6 @@ const insideOut = (str) => {
     // join the transformed words back into a single string
     }).join(' ');
 }
+
+console.log(insideOut('taxi'), 'atix');
+console.log(insideOut('taxis'), 'atxsi');
