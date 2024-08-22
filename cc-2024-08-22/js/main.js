@@ -29,3 +29,7 @@ const reverseVowels = (str) => {
     // map through the characters, replacing vowels with the reversed vowels
     return arr.map(char => checkVowels(char) ? vowels.pop() : char).join('');
 }
+
+console.log(reverseVowels('Hello!'), 'Holle!');
+console.log(reverseVowels('Tomatoes'), 'Temotaos');
+console.log(reverseVowels('Reverse Vowels In A String'), 'RivArsI Vewols en e Streng');
