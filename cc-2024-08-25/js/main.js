@@ -17,5 +17,8 @@ Good luck!
 
 // create a function that takes in a string
 function solve(str) {
-
+    // convert the string into an array of characters,
+    // then use reduce to count the number of odd numbered substrings,
+    // if the character is an odd number, add the current index + 1 to the accumulator
+    return [...str].reduce((acc, c, i) => acc + (+c % 2 ? i + 1 : 0), 0);
 }
