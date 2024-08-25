@@ -22,3 +22,5 @@ function solve(str) {
     // if the character is an odd number, add the current index + 1 to the accumulator
     return [...str].reduce((acc, c, i) => acc + (+c % 2 ? i + 1 : 0), 0);
 }
+
+console.log(solve("1341"), 7);
