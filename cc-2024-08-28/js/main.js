@@ -27,5 +27,34 @@ Both the first and last index cannot be considered as a "midpoint" (So None for 
 
 // create a function that takes in an array of numbers
 function midpointSum(arr) {
-    
+    // determine the length of the array
+    let n = arr.length;
+
+    // if the array length is less than 3, return undefined since there's no valid midpoint
+    if (n < 3) return undefined;
+
+    // initialize sum to store the total sum of the array elements
+    let sum = 0;
+
+    // initialize mid to store the sum of elements to the left of the current index
+    let mid = arr[0];
+
+    // determine the total sum of the array
+    for (let i = 0; i < n; i++) {
+        sum += arr[i];
+    }
+
+    // iterate through the array, skipping the first and last elements
+    for (let i = 1; i < n - 1; i++) {
+        let c = arr[i];
+
+        // if the sum of the left elements equals the sum of the right elements, return the index
+        if (mid === sum - mid - c) return i;
+
+        // update the sum of the left elements
+        mid += c;
+    }
+
+    // return undefined if no valid midpoint is found
+    return undefined;
 }
