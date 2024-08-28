@@ -58,3 +58,6 @@ function midpointSum(arr) {
     // return undefined if no valid midpoint is found
     return undefined;
 }
+
+console.log(midpointSum([4, 1, 7, 9, 3, 9]), 3);
+console.log(midpointSum([1, 0, -1]), undefined);
