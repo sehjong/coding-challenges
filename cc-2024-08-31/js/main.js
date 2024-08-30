@@ -16,5 +16,8 @@ should return 1 + 2*2 + 3 + 4*4 + 5*5*5 === 149
 
 // create a function that takes in an array of nested numbers and a current nesting level, defaulting to 1
 function sumNestedNumbers(arr, level = 1) {
-
+    // use reduce to calculate the sum, checking if each element is an array,
+    // if it's an array, recursively call sumNestedNumbers with an incremented level,
+    // if it's a number, raise it to the power of the current level and add it to the accumulator
+    return arr.reduce((acc, c) => acc + (Array.isArray(c) ? sumNestedNumbers(c, level + 1) : Math.pow(c, level)), 0);
 }
