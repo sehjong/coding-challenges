@@ -21,3 +21,5 @@ function sumNestedNumbers(arr, level = 1) {
     // if it's a number, raise it to the power of the current level and add it to the accumulator
     return arr.reduce((acc, c) => acc + (Array.isArray(c) ? sumNestedNumbers(c, level + 1) : Math.pow(c, level)), 0);
 }
+
+console.log(sumNestedNumbers([1, [2], 3, [4, [5]]]), 149);
