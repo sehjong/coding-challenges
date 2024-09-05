@@ -14,5 +14,6 @@ Note: Only valid inputs will be given.
 
 // create a function that takes in a boolean input, which can either be true or false
 function booleanToString(value) {
-    
+    // use the toString() method to convert the boolean value to its string representation
+    return value.toString();
 }
