@@ -17,3 +17,6 @@ function booleanToString(value) {
     // use the toString() method to convert the boolean value to its string representation
     return value.toString();
 }
+
+console.log(booleanToString(true), 'true');
+console.log(booleanToString(false), 'false');
