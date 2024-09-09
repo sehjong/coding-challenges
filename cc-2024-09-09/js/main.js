@@ -17,3 +17,7 @@ function multiplyEvenOdd(num) {
     // otherwise multiply by 9
     return num * (num % 2 === 0 ? 8 : 9);
 }
+
+console.log(multiplyEvenOdd(2), 16);
+console.log(multiplyEvenOdd(1), 9);
+console.log(multiplyEvenOdd(8), 64);
