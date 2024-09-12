@@ -21,3 +21,7 @@ function findAverage(arr) {
     // return 0 if the array is empty
     return arr.length > 0 ? arr.reduce((acc, c) => acc + c) / arr.length : 0;
 }
+
+console.log(findAverage([1, 1, 1]), 1);
+console.log(findAverage([1, 2, 3]), 2);
+console.log(findAverage([]), 0);
