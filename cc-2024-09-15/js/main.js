@@ -28,5 +28,6 @@ Inputs and the expected output will never exceed the signed 32-bit integer limit
 
 // create a function that takes in two numbers, but in the form of strings
 function sumStr(num1, num2) {
-    
+    // convert both string inputs to numbers, sum them, and convert the result back to a string
+    return String(Number(num1) + Number(num2));
 }
