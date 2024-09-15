@@ -31,3 +31,10 @@ function sumStr(num1, num2) {
     // convert both string inputs to numbers, sum them, and convert the result back to a string
     return String(Number(num1) + Number(num2));
 }
+
+console.log(sumStr('4', '5'), '9');
+console.log(sumStr('34', '5'), '39');
+console.log(sumStr('', ''), '0');
+console.log(sumStr('', ''), '');
+console.log(sumStr('2', ''), '2');
+console.log(sumStr('-5', '3'), '-2');
