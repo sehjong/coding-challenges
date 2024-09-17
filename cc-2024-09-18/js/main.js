@@ -31,5 +31,14 @@ Examples
 
 // create a function that takes in characters char1 and char2, which can be letters, numbers, or symbols
 function checkCase(char1, char2) {
-    
+    // check if either character is not a letter
+    if (char1.toLowerCase() === char1.toUpperCase() || char2.toLowerCase() === char2.toUpperCase()) {
+        return -1;
+    // check if both characters are the same case
+    } else if (char1 === char1.toLowerCase() && char2 === char2.toLowerCase() || char1 === char1.toUpperCase() && char2 === char2.toUpperCase()) {
+        return 1;
+    } else {
+        // if they are letters, but not the same case
+        return 0;
+    }
 }
