@@ -42,3 +42,9 @@ function checkCase(char1, char2) {
         return 0;
     }
 }
+
+console.log(checkCase('a', 'g'), 1);
+console.log(checkCase('A', 'C'), 1);
+console.log(checkCase('b', 'G'), 0);
+console.log(checkCase('B', 'g'), 0);
+console.log(checkCase('0', '?'), -1);
