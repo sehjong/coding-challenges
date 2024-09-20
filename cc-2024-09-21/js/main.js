@@ -23,5 +23,6 @@ Floats with decimal part non equal to zero are considered UNeven for this kata.
 
 // create a function that takes in a number
 function isEvenNumber(n) {
-
+    // check if the number is divisible by 2 with no remainder
+    return n % 2 === 0 ? true : false;
 }
