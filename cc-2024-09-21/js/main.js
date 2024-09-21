@@ -26,3 +26,8 @@ function isEvenNumber(n) {
     // check if the number is divisible by 2 with no remainder
     return n % 2 === 0 ? true : false;
 }
+
+console.log(isEvenNumber(2), true);
+console.log(isEvenNumber(0.5), false);
+console.log(isEvenNumber(-3), false);
+console.log(isEvenNumber(-2), true);
