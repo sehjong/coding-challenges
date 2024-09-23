@@ -11,5 +11,6 @@ It's pretty straightforward. Your goal is to create a function that removes the 
 
 // create a function that takes in a string
 function removeChar(str) {
-
+    // use the slice() method to remove the first and last characters from the string
+    return str.slice(1, -1);
 }
