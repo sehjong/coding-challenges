@@ -14,3 +14,5 @@ function removeChar(str) {
     // use the slice() method to remove the first and last characters from the string
     return str.slice(1, -1);
 }
+
+console.log(removeChar('abc'), 'b');
