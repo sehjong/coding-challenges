@@ -16,5 +16,6 @@ Examples (Input -> Output)
 
 // create a function that takes in an array
 function reverseList(arr) {
-    
+    // use the reverse() method to reverse the elements in the array
+    return arr.reverse();
 }
