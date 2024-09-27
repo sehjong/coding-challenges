@@ -19,3 +19,6 @@ function reverseList(arr) {
     // use the reverse() method to reverse the elements in the array
     return arr.reverse();
 }
+
+console.log(reverseList([1, 2, 3, 4]), [4, 3, 2, 1]);
+console.log(reverseList([9, 2, 0, 7]), [7, 0, 2, 9]);
