@@ -27,4 +27,19 @@ If an empty value ( null, None, Nothing, nil etc. ) is given instead of an array
 // create a function that takes in an array of numbers
 function sumArray(array) {
 
+    // if the array is null or has two or fewer elements, return 0
+    if (array == null || array.length <= 2) {
+        return 0;
+    }
+
+    // find the maximum and minimum values in the array
+    let max = Math.max(...array);
+    let min = Math.min(...array);
+
+    // calculate the sum of all elements in the array
+    let sum = array.reduce((acc, c) => acc + c, 0);
+
+    // return the sum minus the maximum and minimum values
+    return sum - max - min;
+
 }
