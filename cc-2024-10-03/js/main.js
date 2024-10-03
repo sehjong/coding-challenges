@@ -43,3 +43,9 @@ function sumArray(array) {
     return sum - max - min;
 
 }
+
+console.log(sumArray([6, 2, 1, 8, 10]), 16);
+console.log(sumArray([1, 1, 11, 2, 3 ]), 6);
+console.log(sumArray([null]), 0);
+console.log(sumArray([ ]), 0);
+console.log(sumArray([1]), 0);
