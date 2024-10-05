@@ -13,5 +13,15 @@ For example, if the parameters passed are (2, 6), the function should return [2,
 
 // create a function that takes in two numbers, a value, and a maximum boundry for its multiples
 function findMultiples(val, limit) {
+    // initialize an empty array to store the multiples
+    let result = [];
 
+    // iterate through multiples of val starting from val up to and including the limit
+    for (let i = val; i <= limit; i += val) {
+        // push the multiple into the result array
+        result.push(i);
+    }
+
+    // return the result array containing the multiples
+    return result;
 }
