@@ -25,3 +25,5 @@ function findMultiples(val, limit) {
     // return the result array containing the multiples
     return result;
 }
+
+console.log(findMultiples(2, 6), [2, 4, 6]);
